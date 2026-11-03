@@ -6474,5 +6474,240 @@
    "trust",
    "firefighting"
   ]
+ },
+ "cost": {
+  "heading": "What's this costing you?",
+  "sub": "Tap all that are happening. Skip is fine.",
+  "next": "Next",
+  "skip": "Skip",
+  "plan_label": "What this is costing me"
+ },
+ "costs": {
+  "money.0": [
+   "Working hard with nothing to show",
+   "Can't tell which jobs pay",
+   "Paying myself last or not at all",
+   "No cushion for a slow week",
+   "Stress every time I check the bank"
+  ],
+  "money.1": [
+   "Paying bills before customers pay me",
+   "Hours spent chasing payments",
+   "Writing off jobs I already did",
+   "Borrowing to cover the gap",
+   "Awkward calls with customers"
+  ],
+  "money.2": [
+   "Late fees and interest",
+   "Vendors losing patience",
+   "Can't plan or buy ahead",
+   "Sleepless nights over bills",
+   "Using personal money to cover"
+  ],
+  "money.3": [
+   "Taking home less than my people",
+   "Family feels the squeeze",
+   "Thinking about quitting",
+   "No savings building up",
+   "Resenting the business"
+  ],
+  "money.4": [
+   "No idea if we're making money",
+   "Surprise shortfalls",
+   "Taxes or books catch me off guard",
+   "Can't decide on hiring or buying",
+   "Arguments about money"
+  ],
+  "customers.0": [
+   "Payroll is scary in slow weeks",
+   "Turning work away in busy weeks",
+   "Rushed jobs and mistakes when slammed",
+   "Can't plan staffing",
+   "Cash swings month to month"
+  ],
+  "customers.1": [
+   "Hours on quotes that go nowhere",
+   "Losing jobs to cheaper shops",
+   "Not knowing why they said no",
+   "Dropping prices to win",
+   "Empty slots on the schedule"
+  ],
+  "customers.2": [
+   "Callers go to a competitor",
+   "Paying for ads that ring a dead phone",
+   "Bad reviews about not calling back",
+   "Me returning calls at night",
+   "No idea how many we miss"
+  ],
+  "customers.3": [
+   "Paying again to find new customers",
+   "Fewer referrals",
+   "Thin reviews",
+   "No steady base to count on",
+   "Every month starts from zero"
+  ],
+  "customers.4": [
+   "Bays or crews sitting idle",
+   "Payroll with no work behind it",
+   "Panic marketing",
+   "Letting good people go",
+   "Worrying about the future"
+  ],
+  "people.0": [
+   "Scrambling to cover the work",
+   "Paying to hire and train again",
+   "Customers waiting longer",
+   "Overtime for the ones who stay",
+   "Me back doing the work"
+  ],
+  "people.1": [
+   "Re-dos and come-backs",
+   "Unhappy customers",
+   "Wasted parts and time",
+   "Me checking everything twice",
+   "Same talk over and over"
+  ],
+  "people.2": [
+   "I can't step away",
+   "Work stops when I'm busy",
+   "Phone never stops",
+   "Good people stop thinking for themselves",
+   "Nights and weekends lost"
+  ],
+  "people.3": [
+   "Strong people burn out and quit",
+   "Weak work keeps going out",
+   "Team morale drops",
+   "Paying for low output",
+   "Hard to hire good people"
+  ],
+  "people.4": [
+   "Mistakes nobody owns",
+   "Customers feel it",
+   "I carry all the pressure",
+   "Things slip when I'm not there",
+   "Feeling alone in it"
+  ],
+  "people.5": [
+   "Work gets done twice (paper, then the system)",
+   "Money slips through (things never get entered or billed)",
+   "Customers wait or get missed",
+   "Everything comes back to me",
+   "Nobody knows where things stand without asking",
+   "Paying for tools nobody uses",
+   "The ones who keep up get burned out covering"
+  ],
+  "people.6": [
+   "Same problems week after week",
+   "Time lost fixing people issues",
+   "Customers notice",
+   "Tension in the shop",
+   "Me doing it myself"
+  ],
+  "doing.0": [
+   "No time to grow the business",
+   "My people never learn",
+   "I'm the bottleneck",
+   "Long days, every day",
+   "Family time gets cut"
+  ],
+  "doing.1": [
+   "Real work gets interrupted",
+   "Mistakes from switching tasks",
+   "Nothing gets finished",
+   "Wiped out by end of day",
+   "Customers get rushed answers"
+  ],
+  "doing.2": [
+   "Late nights on admin",
+   "Invoices and bills go out late",
+   "Missed deadlines or fees",
+   "No downtime at home",
+   "Mistakes when I'm tired"
+  ],
+  "doing.3": [
+   "Can't take a real vacation",
+   "Sick days hurt the business",
+   "Jobs pile up when I'm out",
+   "Business is worth less without me",
+   "Always on call"
+  ],
+  "doing.4": [
+   "Always behind, never caught up",
+   "Promises slip",
+   "Health and sleep suffer",
+   "No time to think ahead",
+   "Family gets what's left"
+  ],
+  "wornout.0": [
+   "Mornings start with dread",
+   "Avoiding calls I need to make",
+   "Short with people",
+   "Hard to get going",
+   "Losing the reason I started"
+  ],
+  "wornout.1": [
+   "Hours lost to the same fixes",
+   "Never getting to the important stuff",
+   "Team stuck in firefighting",
+   "Feeling stuck",
+   "Customers feel the chaos"
+  ],
+  "wornout.2": [
+   "Missing time with family",
+   "No rest or recovery",
+   "Health slipping",
+   "Resentment building",
+   "Mistakes from being tired"
+  ],
+  "wornout.3": [
+   "Snapping at people I care about",
+   "Team walks on eggshells",
+   "Regret after blowups",
+   "Strain at home",
+   "Good people pulling away"
+  ],
+  "wornout.4": [
+   "No energy left for anything",
+   "Bad decisions from being tired",
+   "Health warning signs",
+   "Pulling away from people",
+   "Thinking about walking away"
+  ],
+  "off.0": [
+   "Dreading going in",
+   "Coasting instead of building",
+   "Bored with the work",
+   "Thinking about selling",
+   "Short with people"
+  ],
+  "off.1": [
+   "People avoid each other",
+   "Work slows down",
+   "Good people may leave",
+   "Mistakes nobody mentions",
+   "Stress at home too"
+  ],
+  "off.2": [
+   "Profit shrinking quietly",
+   "Can't fix what I can't see",
+   "Worry keeps me up",
+   "Late surprises",
+   "Decisions on a hunch"
+  ],
+  "off.3": [
+   "Same results year after year",
+   "Long hours, no progress",
+   "Goals keep slipping",
+   "Losing motivation",
+   "Team stuck too"
+  ],
+  "off.4": [
+   "Uneasy most days",
+   "Second-guessing decisions",
+   "Hard to explain to anyone",
+   "Might miss something real",
+   "Can't relax"
+  ]
  }
 }

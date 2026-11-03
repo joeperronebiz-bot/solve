@@ -12,7 +12,7 @@ function el(tag,attrs,kids){var e=document.createElement(tag);attrs=attrs||{};va
   (kids||[]).forEach(function(c){if(c)e.appendChild(typeof c==="string"?document.createTextNode(raw?c:TX(c)):c);});return e;}
 function lc(x){return /^I[ ']/.test(x)?x:x.charAt(0).toLowerCase()+x.slice(1);}
 function isNotSure(x){return /^not sure/i.test(x||"");}
-var STEP={s1:1,trade:1,pick:1,s2:2,s3:3,evidence:3,money:3,fit:4,root:4,rootlist:4,person:4,dayone:4,how:4,own:4,fixed:5,test:4,actions:5,roadblock:6,idea:6,commit:6,plan:6,pricing:6};
+var STEP={s1:1,trade:1,pick:1,s2:2,cost:2,s3:3,evidence:3,money:3,fit:4,root:4,rootlist:4,person:4,dayone:4,how:4,own:4,fixed:5,test:4,actions:5,roadblock:6,idea:6,commit:6,plan:6,pricing:6};
 function setStep_old(scr){var n=STEP[scr]||(scr in {saved:1,checkback:1,team:1,commits:1,me:1}?6:1);document.getElementById("steplabel").textContent=scr==="plan"?"Done":(scr in {saved:1,checkback:1,team:1,commits:1,me:1})?"Saved on this device":"Step "+n+" of 6";
   document.getElementById("barfill").style.width=(scr==="plan"?100:Math.round(n/6*100-8))+"%";}
 function go(scr,noHist){if(LOCKS&&LOCKED[scr]){toast(D.sell.locked);scr="pricing";}if((scr==="s2"||scr==="pick")&&!S.trade&&S.text1){var dt=detectTrade(S.text1);if(dt){S.trade=dt;S.tradeAuto=1;}}if((scr==="s2"||scr==="pick")&&!S.trade){var lt=learn().trade;if(lt){S.trade=lt;S.tradeAuto=1;}}if(!noHist&&S.scr!==scr)S.hist.push(S.scr);S.scr=scr;save();render(true);}
@@ -176,8 +176,12 @@ V.pick=function(){var keys=S.tie||Object.keys(D.paths);var items=keys.map(functi
   return [el("h1",{text:S.tie&&S.tie.length===2?"Which is closer?":"Which is closest?"}),cardList(items,function(it){pickPath(it.k,[]);},{limit:6}),
     noneBtn(function(){if(S.tie){S.tie=null;render(true);}else pickPath("off",[]);}),nav()];};
 V.s2=function(){var p=P(),items=S.s2order.map(function(i){return {label:p.s2[i].label,i:i};});
-  return [el("h1",{text:D.screens.s2.heading}),cardList(items,function(it){S.s2=it.i;S.mk=null;go(S.path==="money"?"money":"s3");},{limit:items.length}),
+  return [el("h1",{text:D.screens.s2.heading}),cardList(items,function(it){S.s2=it.i;S.mk=null;S.costs=[];go(costOpts()?"cost":(S.path==="money"?"money":"s3"));},{limit:items.length}),
     noneBtn(function(){S.s3=null;S.notsure=true;go("rootlist");}),nav()];};
+function costOpts(){var c=S.path&&S.s2!=null&&D.paths[S.path]&&D.paths[S.path].s2[S.s2];return c&&D.costs&&D.costs[c.id];}
+V.cost=function(){var C=D.cost,o=costOpts()||[];S.costs=S.costs||[];var nx=function(){go(S.path==="money"?"money":"s3");};
+  return [el("h1",{text:C.heading}),el("p",{cls:"sub",text:C.sub}),chipsMulti(o,S.costs,function(c){S.costs=c;save();}),
+    el("button",{cls:"btn",text:C.next,on:nx}),el("button",{cls:"link",text:C.skip,on:function(){S.costs=[];nx();}}),nav()];};
 V.s3=function(){var c=P().s2[S.s2],sub=(D.screens.s3.sub_override||{})[S.path]||D.screens.s3.sub;
   var items=c.s3.map(function(x,j){return {label:x.label,j:j};});
   return [el("h1",{text:D.screens.s3.heading}),el("p",{cls:"sub",text:sub}),cardList(items,function(it){S.s3=it.j;var x=c.s3[it.j];
@@ -307,7 +311,7 @@ V.commit=function(){var c=D.screens.commit,one=S.acts.length<=1&&S.first,kids=[e
   kids.push(mk,nav());return kids;};
 function planData(){var p=P(),r=R(S.root),out=[];var s2=S.s2!=null?p.s2[S.s2]:null,s3=(s2&&S.s3!=null)?s2.s3[S.s3]:null;
   function add(h,t){if(t&&!isNotSure(t))out.push([h,t]);}
-  add("What's driving me crazy",S.text1?'"'+S.text1+'"':p.label);if(!isOut()){add("What it looks like",s2&&s2.label);add("What usually happens right before",s3&&s3.label);}
+  add("What's driving me crazy",S.text1?'"'+S.text1+'"':p.label);if(!isOut()){add("What it looks like",s2&&s2.label);if(S.costs&&S.costs.length)add(D.cost.plan_label,S.costs.join("; "));add("What usually happens right before",s3&&s3.label);}
   var unc=S.root==="general"?(S.own||r.statement):(S.surface&&S.surface!==S.root?R(S.surface).statement+". Underneath that: "+lc(r.statement):r.statement);
   var dfn=signals().defensive||S.testMode;add(dfn?D.adapt.uncovered_label:"What I uncovered",unc);
   var ts=(S.theirSide||[]).filter(function(x){return !isNotSure(x);});if(ts.length)add("From their side, could be true",ts.join(". "));if(S.own&&S.root!=="general")add("In my own words",S.own);
@@ -680,7 +684,7 @@ V.restore=function(){var Q=D.r3,ta=el("textarea",{rows:"4",placeholder:Q.restore
   var b=el("button",{cls:"btn",text:Q.restore_btn,on:function(){if(!PAY_LIVE){out.textContent=Q.restore_off;return;}checkReceipt(ta.value).then(function(p){if(!p){out.textContent=Q.restore_bad;return;}if(p.__rev){applyReceipt(p,null);out.textContent=Q.restore_revoked;return;}applyReceipt(p,ta.value.trim());out.textContent=RCPT.msg;});}});
   return [el("h1",{raw:"1",text:Q.restore_h}),el("p",{cls:"sub",raw:"1",text:Q.restore_sub}),ta,b,out,nav()];};
 
-var FLOWP={s1:0,trade:8,pick:8,s2:15,s3:28,evidence:40,money:40,root:55,rootlist:55,own:60,person:66,pq:72,test:78,fixed:82,actions:85,commit:92,plan:100,roadblock:100,idea:100,fit:100,dayone:100,how:100};
+var FLOWP={s1:0,trade:8,pick:8,s2:15,cost:22,s3:28,evidence:40,money:40,root:55,rootlist:55,own:60,person:66,pq:72,test:78,fixed:82,actions:85,commit:92,plan:100,roadblock:100,idea:100,fit:100,dayone:100,how:100};
 function setStep(scr){var lab=document.getElementById("steplabel"),bar=document.getElementById("barfill"),v=FLOWP[scr];
   lab.textContent=scr==="plan"?"Done":(v==null?"Saved on this phone":"");bar.style.width=(v==null?100:Math.max(4,v))+"%";}
 function profHelper(){if(!S.prof)return null;if(S.prof.name)return S.prof.name;if(D.r5.who[S.prof.type])return D.r5.who[S.prof.type];var o=D.profile.ask.options.filter(function(x){return x[0]===S.prof.type;})[0];return o?"My "+o[1].replace(/^An? /,"").replace(/\s*\(.*\)$/,"").toLowerCase():null;}

@@ -751,6 +751,109 @@
     }
    ]
   },
+  "people.5": {
+   "intro": "The last time a new tool didn't stick",
+   "questions": [
+    {
+     "q": "How was it rolled out?",
+     "options": [
+      {
+       "label": "Announced, then everyone on their own",
+       "roots": [
+        "rollout",
+        "teach"
+       ]
+      },
+      {
+       "label": "One quick demo, then go",
+       "roots": [
+        "teach",
+        "rollout"
+       ]
+      },
+      {
+       "label": "Only one person got trained",
+       "roots": [
+        "rollout",
+        "inhead"
+       ]
+      },
+      {
+       "label": "Left to the vendor's video or manual",
+       "roots": [
+        "rollout",
+        "teach"
+       ]
+      }
+     ]
+    },
+    {
+     "q": "What happened with the old way?",
+     "options": [
+      {
+       "label": "It still works side by side",
+       "roots": [
+        "oldway"
+       ]
+      },
+      {
+       "label": "A paper backup kept, just in case",
+       "roots": [
+        "oldway",
+        "toleratelow"
+       ]
+      },
+      {
+       "label": "Nobody checked who used the new one",
+       "roots": [
+        "toleratelow",
+        "oldway"
+       ]
+      },
+      {
+       "label": "It was switched off",
+       "roots": [
+        "teach",
+        "nowhy"
+       ]
+      }
+     ]
+    },
+    {
+     "q": "When did it come to light?",
+     "options": [
+      {
+       "label": "Info missing from the system",
+       "roots": [
+        "oldway",
+        "teach"
+       ]
+      },
+      {
+       "label": "Someone asked me to do it",
+       "roots": [
+        "bottleneck",
+        "teach"
+       ]
+      },
+      {
+       "label": "A customer caught a mistake",
+       "roots": [
+        "nocheckins",
+        "rework"
+       ]
+      },
+      {
+       "label": "Someone said it's too much",
+       "roots": [
+        "toomuch",
+        "nowhy"
+       ]
+      }
+     ]
+    }
+   ]
+  },
   "doing": {
    "intro": "The last time it landed on my plate",
    "questions": [
@@ -1667,30 +1770,61 @@
     },
     {
      "id": "people.5",
-     "label": "Not sure, it just keeps happening",
+     "label": "They're not keeping up with new tech",
      "s3": [
       {
        "id": "people.5.0",
+       "label": "New tool rolled out, no real training",
+       "root": "rollout"
+      },
+      {
+       "id": "people.5.1",
+       "label": "The old way still works, so it gets used",
+       "root": "oldway"
+      },
+      {
+       "id": "people.5.2",
+       "label": "Nobody showed why the new way is better",
+       "root": "nowhy"
+      },
+      {
+       "id": "people.5.3",
+       "label": "Lots of new things at once",
+       "root": "toomuch"
+      },
+      {
+       "id": "people.5.4",
+       "label": "Not sure, it just doesn't stick",
+       "root": "rollout"
+      }
+     ]
+    },
+    {
+     "id": "people.6",
+     "label": "Not sure, it just keeps happening",
+     "s3": [
+      {
+       "id": "people.6.0",
        "label": "Same problem, different person",
        "root": "expectations"
       },
       {
-       "id": "people.5.1",
+       "id": "people.6.1",
        "label": "Things get missed between people",
        "root": "roles"
       },
       {
-       "id": "people.5.2",
+       "id": "people.6.2",
        "label": "Rarely a one-on-one talk",
        "root": "nocheckins"
       },
       {
-       "id": "people.5.3",
+       "id": "people.6.3",
        "label": "Stretched too thin to notice early",
        "root": "firefighting"
       },
       {
-       "id": "people.5.4",
+       "id": "people.6.4",
        "label": "Not sure yet",
        "root": "nocheckins"
       }
@@ -1701,8 +1835,8 @@
     "nocheckins",
     "expectations",
     "toleratelow",
-    "future",
-    "inhead"
+    "nowhy",
+    "future"
    ]
   },
   "doing": {
@@ -3208,6 +3342,126 @@
    ],
    "default_helper": "number2"
   },
+  "rollout": {
+   "experiments": [
+    {
+     "try": "Run one 20-minute hands-on session",
+     "watch": "Who uses it the next day"
+    },
+    {
+     "try": "Pair each person with the go-to for one task",
+     "watch": "Questions that stop coming to me"
+    }
+   ],
+   "statement": "New tools landed with no plan to learn them",
+   "deeper": [
+    "teach",
+    "nowhy",
+    "toomuch"
+   ],
+   "fixed": [
+    "Everyone uses the new tool every day",
+    "One go-to person for the new tool",
+    "Questions go to the go-to, not me",
+    "Nobody falls back to the old way"
+   ],
+   "actions_top3": [
+    "Name one go-to person for the tool",
+    "Block 20 minutes of hands-on practice",
+    "Show it once, then watch them use it"
+   ],
+   "actions_more": [
+    "Make a one-page cheat sheet with photos",
+    "Ask the vendor for a free training call",
+    "Move one task fully into the tool"
+   ],
+   "roadblocks": [
+    "time",
+    "old",
+    "pushback"
+   ],
+   "default_helper": "number2"
+  },
+  "oldway": {
+   "experiments": [
+    {
+     "try": "Turn off one old way for a week",
+     "watch": "What breaks and what doesn't"
+    },
+    {
+     "try": "Check every entry at day's end",
+     "watch": "How fast it becomes normal"
+    }
+   ],
+   "statement": "Old way still works, so the new one gets skipped",
+   "deeper": [
+    "toleratelow",
+    "rollout",
+    "nowhy"
+   ],
+   "fixed": [
+    "The old way retired on a set date",
+    "Everything entered in the new tool",
+    "Nobody asks for the paper version",
+    "Missing entries caught the same day"
+   ],
+   "actions_top3": [
+    "Pick a date to retire the old way",
+    "Move one form fully into the new tool",
+    "Check entries at day's end this week"
+   ],
+   "actions_more": [
+    "Share why the change matters, in one line",
+    "Thank the first person who goes all in",
+    "Fix the one thing that makes it slower"
+   ],
+   "roadblocks": [
+    "pushback",
+    "old",
+    "awkward"
+   ],
+   "default_helper": "team"
+  },
+  "toomuch": {
+   "experiments": [
+    {
+     "try": "Freeze new tools for 30 days",
+     "watch": "Whether the main one finally sticks"
+    },
+    {
+     "try": "Ask each person which tool slows them",
+     "watch": "The same answer twice"
+    }
+   ],
+   "statement": "Too many changes at once, so nothing sticks",
+   "deeper": [
+    "rollout",
+    "noplanning",
+    "firefighting"
+   ],
+   "fixed": [
+    "One new tool at a time",
+    "Each change used daily before the next",
+    "The team knows what's coming next",
+    "Fewer apps, each one fully used"
+   ],
+   "actions_top3": [
+    "List every tool and app in use",
+    "Pick the one that matters most now",
+    "Pause any rollout that isn't sticking"
+   ],
+   "actions_more": [
+    "Drop one tool nobody really uses",
+    "Ask which tool slows the team down",
+    "Set one change per month, no more"
+   ],
+   "roadblocks": [
+    "time",
+    "cost",
+    "pushback"
+   ],
+   "default_helper": "team"
+  },
   "trust": {
    "experiments": [
     {
@@ -4297,37 +4551,50 @@
   "where": "last line of the plan, path 'wornout' only (approved by Joe Nov 3)"
  },
  "routing": {
-  "method": "keyword stems; s2-specific match=2 pts, path match=1; top path wins; tie -> show 2 closest buttons; none -> show 6 buttons 'Which is closest?'; matched s2 cards shown first; AI may re-rank later, keywords are fallback",
+  "method": "whole-word keywords (+s/es/d/ed/ing; * = open stem), each rule has weight w; generic people words w=1, specific signals w=2-4; top path wins if it has a card match or leads by 2+; otherwise show up to 3 closest buttons; none -> show 6 buttons 'Which is closest?'; matched s2 cards shown first; AI may re-rank later, keywords are fallback",
   "rules": [
    {
     "path": "money",
     "s2": null,
     "keywords": [
      "money",
-     "cash",
+     "cash*",
      "broke",
-     "profit",
-     "margin",
-     "bank",
-     "bills",
-     "afford",
-     "debt",
-     "loan",
+     "profit*",
+     "margin*",
+     "bank*",
+     "bills?",
+     "afford*",
+     "debt*",
+     "loan*",
      "payroll",
-     "expens"
-    ]
+     "expens*",
+     "financ*",
+     "revenue",
+     "in the red"
+    ],
+    "w": 1
    },
    {
     "path": "money",
     "s2": 0,
     "keywords": [
      "busy but",
-     "busy",
      "no money",
      "no profit",
      "busy and broke",
-     "where.*money"
-    ]
+     "where.*money",
+     "money goes",
+     "price*",
+     "pricing",
+     "undercharg*",
+     "charge more",
+     "too cheap",
+     "cheap prices",
+     "thin margin*",
+     "margins are thin"
+    ],
+    "w": 2
    },
    {
     "path": "money",
@@ -4336,28 +4603,37 @@
      "pay late",
      "pay me late",
      "paying late",
-     "late pay",
+     "late pay*",
      "owe",
      "owed",
-     "collect",
-     "invoice",
-     "receivable",
+     "owing",
+     "collect*",
+     "invoic*",
+     "receivable*",
      "unpaid",
-     "chasing pay"
-    ]
+     "chasing pay*",
+     "dont pay",
+     "wont pay",
+     "slow pay*"
+    ],
+    "w": 2
    },
    {
     "path": "money",
     "s2": 2,
     "keywords": [
      "bills",
-     "juggl",
-     "credit card",
-     "borrow",
+     "juggl*",
+     "credit card*",
+     "borrow*",
      "behind on",
-     "overdue bill",
-     "vendor"
-    ]
+     "overdue bill*",
+     "vendor*",
+     "taxes",
+     "irs",
+     "make payroll"
+    ],
+    "w": 2
    },
    {
     "path": "money",
@@ -4367,27 +4643,40 @@
      "paycheck",
      "salary",
      "my pay",
-     "can't pay me",
-     "owner pay"
-    ]
+     "cant pay me",
+     "owner pay",
+     "pay me",
+     "take home",
+     "draw"
+    ],
+    "w": 2
    },
    {
     "path": "customers",
     "s2": null,
     "keywords": [
-     "customer",
-     "client",
-     "lead",
+     "customer*",
+     "client*",
+     "leads?",
      "sales",
      "work coming",
      "no work",
+     "cars coming in",
+     "coming in the door",
+     "enough work",
+     "enough cars",
      "slow",
      "calls",
      "marketing",
      "jobs",
-     "phone",
-     "ring"
-    ]
+     "phones?",
+     "ring*",
+     "business is down",
+     "advertis*",
+     "get the word out",
+     "new business"
+    ],
+    "w": 1
    },
    {
     "path": "customers",
@@ -4398,111 +4687,190 @@
      "up and down",
      "seasonal",
      "slow season",
-     "dead week"
-    ]
+     "dead week*",
+     "slow months?",
+     "winter",
+     "summer"
+    ],
+    "w": 2
    },
    {
     "path": "customers",
     "s2": 1,
     "keywords": [
-     "quote",
-     "estimate",
-     "price shop",
+     "quote*",
+     "estimate*",
+     "price shop*",
      "ghost",
+     "ghosts",
      "never hear back",
-     "don't book",
-     "doesn't close"
-    ]
+     "dont book",
+     "doesnt close",
+     "dont close",
+     "shopping around",
+     "close the deal",
+     "conversion*"
+    ],
+    "w": 2
    },
    {
     "path": "customers",
     "s2": 2,
     "keywords": [
-     "voicemail",
+     "voicemail*",
      "miss.*call",
      "missed",
-     "phone ring",
-     "nobody answer"
-    ]
+     "phone ring*",
+     "nobody answer*",
+     "dont answer",
+     "call backs?"
+    ],
+    "w": 2
    },
    {
     "path": "customers",
     "s2": 3,
     "keywords": [
      "repeat",
-     "don't come back",
+     "dont come back",
      "come back",
-     "referral",
-     "return"
-    ]
+     "referral*",
+     "return*",
+     "loyal*"
+    ],
+    "w": 2
    },
    {
     "path": "customers",
     "s2": 4,
     "keywords": [
      "dried up",
+     "drying up",
      "dry",
      "competition",
-     "competitor",
+     "competitor*",
      "online",
-     "google"
-    ]
+     "google",
+     "reviews?",
+     "yelp",
+     "website",
+     "seo",
+     "social media",
+     "facebook",
+     "instagram"
+    ],
+    "w": 2
    },
    {
     "path": "people",
     "s2": null,
     "keywords": [
      "staff",
-     "employee",
+     "employees?",
      "team",
-     "tech",
+     "techs",
+     "technicians?",
      "guys",
+     "gals?",
+     "girls?",
      "crew",
-     "worker",
+     "workers?",
      "people",
      "hire",
-     "manager",
-     "foreman"
-    ]
+     "hiring",
+     "managers?",
+     "foreman",
+     "humans?",
+     "help",
+     "my guy",
+     "my kid*",
+     "apprentice*",
+     "shop manager",
+     "office manager",
+     "front desk",
+     "receptionist",
+     "estimators?",
+     "painters?",
+     "mechanics?",
+     "body ?m[ae]n",
+     "detailers?",
+     "installers?",
+     "drivers?",
+     "nurses?",
+     "cooks?",
+     "servers?",
+     "stylists?"
+    ],
+    "w": 1
    },
    {
     "path": "people",
     "s2": 0,
     "keywords": [
-     "quit",
-     "quitting",
-     "leav",
+     "quit*",
+     "leav*",
      "turnover",
-     "no.?show",
+     "no.?shows?",
+     "dont show",
+     "doesnt show",
+     "call out*",
+     "calls out",
      "walk off",
      "walked out",
-     "ghosted me"
-    ]
+     "ghosted me",
+     "cant keep (good )?(people|employees|staff|help|anyone|techs|guys|workers)",
+     "keep losing",
+     "cant find good",
+     "cant hire",
+     "cant find (people|help|techs|workers)"
+    ],
+    "w": 2
    },
    {
     "path": "people",
     "s2": 1,
     "keywords": [
-     "mistake",
+     "mistake*",
+     "dont do what i (say|tell|ask)",
+     "dont listen",
+     "wont listen",
+     "doesnt listen",
      "sloppy",
-     "don't follow",
-     "shortcut",
+     "dont follow",
+     "doesnt follow",
+     "not follow*",
+     "wont follow",
+     "shortcut*",
      "not done right",
      "wrong way",
      "quality",
-     "comeback"
-    ]
+     "comebacks?",
+     "process*",
+     "procedure*",
+     "checklist*",
+     "accountab*",
+     "sop",
+     "standards?",
+     "my way",
+     "the right way"
+    ],
+    "w": 2
    },
    {
     "path": "people",
     "s2": 2,
     "keywords": [
      "ask me",
+     "asking me",
      "every decision",
-     "can't decide",
+     "cant decide",
      "need me",
-     "run everything by"
-    ]
+     "run everything by",
+     "decision*",
+     "without asking me",
+     "about everything"
+    ],
+    "w": 2
    },
    {
     "path": "people",
@@ -4513,22 +4881,88 @@
      "best guy",
      "weak",
      "lazy",
-     "bad apple",
-     "dead weight"
-    ]
+     "bad apple*",
+     "dead weight",
+     "pulling (his|her|their) weight",
+     "carry*",
+     "underperform*"
+    ],
+    "w": 2
    },
    {
     "path": "people",
     "s2": 4,
     "keywords": [
-     "don't care",
-     "doesn't care",
+     "dont care",
+     "doesnt care",
      "no one cares",
      "nobody cares",
      "attitude",
      "effort",
-     "ownership"
-    ]
+     "ownership",
+     "care like i do",
+     "motivat*",
+     "entitled",
+     "just a paycheck"
+    ],
+    "w": 2
+   },
+   {
+    "path": "people",
+    "s2": 5,
+    "keywords": [
+     "(with|new|of|on|to|about|latest|in|and) tech(?=\\W)*",
+     "tech (stuff|changes?|tools?|side|savvy)",
+     "technolog*",
+     "software",
+     "computers?",
+     "tablets?",
+     "ipads?",
+     "laptops?",
+     "digital",
+     "online system",
+     "new system*",
+     "the system",
+     "new tools?",
+     "new equipment",
+     "new program",
+     "program",
+     "app",
+     "apps",
+     "ccc",
+     "mitchell",
+     "cccone",
+     "adapt*",
+     "new way",
+     "new things",
+     "learn*",
+     "train*",
+     "keep(ing)? up with",
+     "not keeping up",
+     "behind the times",
+     "old school",
+     "set in (their|his|her) ways",
+     "resist*",
+     "wont change",
+     "dont want to change",
+     "hate change",
+     "on paper",
+     "paper instead",
+     "still writ*",
+     "wont (use|learn|try)",
+     "dont use",
+     "doesnt use",
+     "refus\\w* to (use|learn|try)",
+     "nobody uses",
+     "never use",
+     "no one uses",
+     "stuck in (the )?(past|old|19[0-9][0-9]|20[0-9][0-9])",
+     "automat*",
+     "ai",
+     "chatgpt",
+     "upgrade*"
+    ],
+    "w": 3
    },
    {
     "path": "doing",
@@ -4537,11 +4971,17 @@
      "myself",
      "alone",
      "everything",
+     "delegat*",
+     "let go",
      "do it all",
      "all on me",
      "only me",
-     "no help"
-    ]
+     "no help",
+     "only one who",
+     "only one that",
+     "only person"
+    ],
+    "w": 1
    },
    {
     "path": "doing",
@@ -4550,19 +4990,28 @@
      "faster if i",
      "just do it",
      "easier to do",
-     "do it myself"
-    ]
+     "do it myself",
+     "only one who can",
+     "only one that can",
+     "only person who can",
+     "nobody else can",
+     "no one else can"
+    ],
+    "w": 2
    },
    {
     "path": "doing",
     "s2": 1,
     "keywords": [
-     "texts",
+     "texts?",
      "constantly",
-     "interrupt",
+     "interrupt*",
      "phone all day",
-     "questions all day"
-    ]
+     "questions all day",
+     "all day long",
+     "cant get anything done"
+    ],
+    "w": 2
    },
    {
     "path": "doing",
@@ -4570,11 +5019,13 @@
     "keywords": [
      "paperwork",
      "admin",
-     "emails",
+     "emails?",
      "office",
      "quickbooks",
-     "bookkeeping"
-    ]
+     "bookkeeping",
+     "books"
+    ],
+    "w": 2
    },
    {
     "path": "doing",
@@ -4582,31 +5033,43 @@
     "keywords": [
      "day off",
      "vacation",
-     "can't leave",
+     "cant leave",
      "falls apart",
-     "when i'm out",
-     "sick day"
-    ]
+     "when im out",
+     "sick day",
+     "without me",
+     "time off"
+    ],
+    "w": 2
    },
    {
     "path": "wornout",
     "s2": null,
     "keywords": [
      "tired",
-     "exhaust",
-     "burn",
-     "burned out",
+     "exhaust*",
+     "burn*",
      "worn",
-     "dread",
-     "stress",
-     "overwhelm",
-     "can't sleep",
-     "sleep",
+     "dread*",
+     "stress*",
+     "overwhelm*",
+     "cant sleep",
+     "sleep*",
      "done with",
      "sick of",
      "hate",
-     "drained"
-    ]
+     "drained",
+     "fried",
+     "no energy",
+     "cant do this",
+     "give up",
+     "dont want to (go|come) (in|to work)",
+     "hate going in",
+     "quit everything",
+     "sell the business",
+     "close the doors"
+    ],
+    "w": 1
    },
    {
     "path": "wornout",
@@ -4614,9 +5077,11 @@
     "keywords": [
      "same thing every",
      "fires",
-     "firefight",
-     "groundhog"
-    ]
+     "firefight*",
+     "groundhog",
+     "same problems?"
+    ],
+    "w": 2
    },
    {
     "path": "wornout",
@@ -4627,15 +5092,19 @@
      "hours",
      "70 hours",
      "60 hours",
-     "late night"
-    ]
+     "80 hours",
+     "late night*",
+     "never home",
+     "work all the time"
+    ],
+    "w": 2
    },
    {
     "path": "wornout",
     "s2": 3,
     "keywords": [
-     "snap",
-     "yell",
+     "snap*",
+     "yell*",
      "temper",
      "short fuse",
      "wife",
@@ -4643,8 +5112,10 @@
      "spouse",
      "family",
      "kids",
-     "marriage"
-    ]
+     "marriage",
+     "at home"
+    ],
+    "w": 2
    },
    {
     "path": "off",
@@ -4654,13 +5125,31 @@
      "weird",
      "something wrong",
      "not right",
-     "can't put my finger",
+     "cant put my finger",
      "gut",
-     "stuck",
+     "whats wrong",
      "not fun",
      "meh",
-     "lost"
-    ]
+     "lost",
+     "bored",
+     "no direction",
+     "whats next"
+    ],
+    "w": 1
+   },
+   {
+    "path": "off",
+    "s2": 0,
+    "keywords": [
+     "not fun",
+     "fine on paper",
+     "no joy",
+     "dont enjoy",
+     "lost the passion",
+     "lost my passion",
+     "used to love"
+    ],
+    "w": 2
    },
    {
     "path": "off",
@@ -4669,10 +5158,38 @@
      "tension",
      "drama",
      "gossip",
-     "fight",
-     "conflict",
-     "behind my back"
-    ]
+     "fight*",
+     "conflict*",
+     "behind my back",
+     "disagree*",
+     "dont agree",
+     "argu*",
+     "on the same page",
+     "butting heads"
+    ],
+    "w": 2
+   },
+   {
+    "path": "off",
+    "s2": 1,
+    "keywords": [
+     "partners?",
+     "co-?owners?",
+     "business partner"
+    ],
+    "w": 4
+   },
+   {
+    "path": "doing",
+    "s2": 0,
+    "keywords": [
+     "only one who can",
+     "only one that can",
+     "only person who can",
+     "nobody else can",
+     "no one else can"
+    ],
+    "w": 3
    },
    {
     "path": "off",
@@ -4681,8 +5198,11 @@
      "slipping",
      "down this year",
      "numbers down",
-     "declin"
-    ]
+     "declin*",
+     "shrinking",
+     "going down"
+    ],
+    "w": 2
    },
    {
     "path": "off",
@@ -4692,8 +5212,16 @@
      "spinning",
      "treading water",
      "hamster",
-     "stuck"
-    ]
+     "stuck",
+     "plateau*",
+     "flat",
+     "not growing",
+     "isnt growing",
+     "arent growing",
+     "cant grow",
+     "no growth"
+    ],
+    "w": 2
    }
   ]
  },
@@ -4922,7 +5450,7 @@
   "restore_off": "Paid plans aren't live yet. Nothing to restore."
  },
  "r4": {
-  "worn_words": "\\b(tired|exhausted|burned out|burnt out|burnout|cant keep|can not keep|dreading|dread|worn out|cant sleep|running on empty|no energy|wiped out|fried)\\b",
+  "worn_words": "\\b(tired|exhausted|burned out|burnt out|burnout|cant keep(?! (up with|good|people|staff|employees|anyone|techs|help|workers))|can not keep going|dreading|dread|worn out|cant sleep|running on empty|no energy|wiped out|fried)\\b",
   "show_q": "Who will I show?",
   "hand_q": "Who gets it?",
   "hand_words": "\\b(hand|hands|hand over|handoff|give|delegate|pass)\\b",
@@ -4953,6 +5481,9 @@
    ]
   },
   "staff_roots": [
+   "rollout",
+   "oldway",
+   "toomuch",
    "hiring",
    "future",
    "nocheckins",
@@ -5923,6 +6454,7 @@
   "flag_ok": "Nothing stands out yet.",
   "friction_label": "Friction lines",
   "handoff_roots": [
+   "rollout",
    "teach",
    "expectations",
    "inhead",

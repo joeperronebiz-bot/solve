@@ -1,0 +1,5946 @@
+{
+ "app": "You can fix this. One step at a time.",
+ "brand": "Perrone Strategic Systems",
+ "domain": "solve.joeperrone.biz",
+ "rules": {
+  "free_text_spots": [
+   "screen1",
+   "own_words"
+  ],
+  "every_list_has": "None of these fit",
+  "progress": "Step X of 6",
+  "no_you_except_locked_screen1": true,
+  "max_card_words": 10
+ },
+ "steps": [
+  "What's going on",
+  "What it looks like",
+  "Right before",
+  "The root",
+  "What fixed looks like",
+  "My first move"
+ ],
+ "screen1": {
+  "heading": "What's the one thing in your business that's driving you crazy right now?",
+  "placeholder": "e.g. techs keep quitting",
+  "reassure": "A few minutes. No sign-up. Nothing to buy.",
+  "or_label": "Not sure? Tap what feels closest",
+  "locked": true,
+  "buttons": [
+   {
+    "id": "money",
+    "label": "Not enough money left at the end of the month"
+   },
+   {
+    "id": "customers",
+    "label": "Not enough customers or work coming in"
+   },
+   {
+    "id": "people",
+    "label": "My people aren't doing what they should"
+   },
+   {
+    "id": "doing",
+    "label": "I'm doing everything myself"
+   },
+   {
+    "id": "wornout",
+    "label": "I'm worn out and dreading tomorrow"
+   },
+   {
+    "id": "off",
+    "label": "Something just feels off"
+   }
+  ],
+  "none_fit": "routes to path 'off'"
+ },
+ "profile": {
+  "ask": {
+   "heading": "Is one person part of this?",
+   "options": [
+    [
+     "employee",
+     "An employee"
+    ],
+    [
+     "longtime",
+     "A long-time employee (5+ years)"
+    ],
+    [
+     "partner",
+     "A business partner"
+    ],
+    [
+     "vendor",
+     "A vendor or supplier"
+    ],
+    [
+     "customer",
+     "A customer"
+    ],
+    [
+     "family",
+     "Family"
+    ]
+   ],
+   "none": "No one specific"
+  },
+  "dayone": {
+   "heading": "They were the right pick on day one. What changed?",
+   "sub": "Which of these could be true? Pick any.",
+   "brought": {
+    "q": "Why they came on",
+    "multi": true,
+    "options": [
+     "Hungry",
+     "Had a vision",
+     "Skilled",
+     "Loyal",
+     "Cheap or available",
+     "Friend or family",
+     "Not sure"
+    ]
+   },
+   "strengths": [
+    "Hands-on work",
+    "Customers",
+    "Solving problems",
+    "Training others",
+    "Showing up, every time",
+    "Speed",
+    "Attention to detail",
+    "Not sure"
+   ],
+   "great_then": "Great at, back then",
+   "today": {
+    "q": "Today",
+    "multi": true,
+    "options": [
+     "Still hungry, but their vision drifted from ours",
+     "Hit a ceiling, no next step",
+     "Comfortable, settled in",
+     "Carrying more than before",
+     "Their ideas aren't heard anymore",
+     "Not sure"
+    ]
+   },
+   "listen": {
+    "min_picks": 2,
+    "step": "Have a 15-minute listening talk first",
+    "opener": "Where do you see yourself and this place in two years?",
+    "note": "Listen first. Correct later, if at all."
+   },
+   "mic_note": "Anything to add? Tap and talk. It goes in my own words.",
+   "still_best": "Still best at, today",
+   "delta_q": "Day one \u2192 today",
+   "delta": [
+    {
+     "id": "volume",
+     "label": "Workload",
+     "then": "Lighter",
+     "opts": [
+      "Same",
+      "Heavier",
+      "Lighter"
+     ]
+    },
+    {
+     "id": "role",
+     "label": "Their role",
+     "then": "Original role",
+     "opts": [
+      "Same",
+      "Bigger",
+      "Different"
+     ]
+    },
+    {
+     "id": "systems",
+     "label": "Systems and tools",
+     "then": "Original setup",
+     "opts": [
+      "Same",
+      "New",
+      "Fewer"
+     ]
+    },
+    {
+     "id": "reports",
+     "label": "Who they report to",
+     "then": "Original boss",
+     "opts": [
+      "Same",
+      "Changed"
+     ]
+    },
+    {
+     "id": "lead",
+     "label": "How I lead them",
+     "then": "Original style",
+     "opts": [
+      "Same",
+      "More hands-on",
+      "More hands-off"
+     ]
+    },
+    {
+     "id": "paylife",
+     "label": "Pay or life outside work",
+     "then": "Steady",
+     "opts": [
+      "Same",
+      "Changed"
+     ]
+    },
+    {
+     "id": "person",
+     "label": "The person (health, mood, focus)",
+     "then": "Steady",
+     "opts": [
+      "Same",
+      "Changed"
+     ]
+    }
+   ],
+   "default": "Same"
+  },
+  "how": {
+   "heading": "Which of these could be true?",
+   "sub": "Pick any.",
+   "direction": {
+    "q": "Takes direction best",
+    "options": [
+     "Written down",
+     "In a quick talk",
+     "Being shown",
+     "Not sure"
+    ]
+   },
+   "disagree": {
+    "q": "When they disagree, they",
+    "options": [
+     "Push back",
+     "Go quiet",
+     "Go along, then don't",
+     "Not sure"
+    ]
+   },
+   "driver": {
+    "q": "What drives them",
+    "options": [
+     "Pride in the work",
+     "Money",
+     "Respect",
+     "Being trusted",
+     "Freedom in how",
+     "Not sure"
+    ]
+   },
+   "expect": {
+    "q": "What's expected",
+    "options": [
+     "Clearly agreed, in writing",
+     "Said once, out loud",
+     "Grew over time, unspoken",
+     "Not sure"
+    ]
+   },
+   "since": {
+    "q": "Since it was made clear",
+    "options": [
+     "Still happens, more than once",
+     "Happened once",
+     "Not made clear yet",
+     "Not sure"
+    ]
+   }
+  },
+  "framing": "Every question about another person: 'Which of these could be true?' multi-select, in their shoes.",
+  "rules": "listening talk leads the plan if 2+ Today picks; dontknow if expect != 'Clearly agreed, in writing' and since != 'Still happens, more than once'; else cant if role Bigger/Different, or brought has 'Cheap or available'/'Friend or family' without 'Skilled'; else notsetup if volume Heavier, systems New/Fewer, reports Changed, lead changed, paylife Changed, person Changed; else wont if since='Still happens, more than once'; else dontknow",
+  "classes": {
+   "dontknow": {
+    "label": "Doesn't know yet (expectation unclear)",
+    "steps": [
+     "Write what 'done' looks like in 3 lines",
+     "Go over it together, then ask for questions",
+     "Check once at the end of the week"
+    ],
+    "test": [
+     "Hand over the written expectation",
+     "Whether it's met within the week"
+    ],
+    "opener": "I don't think I ever made this clear. Here's what done looks like."
+   },
+   "cant": {
+    "label": "Can't yet (skill)",
+    "steps": [
+     "Show it once, watch them do it once",
+     "Pair them with someone strong at it",
+     "Check the first 3, then step back"
+    ],
+    "test": [
+     "Show once, watch once, check once",
+     "How close it comes to right"
+    ],
+    "opener": "This part is newer. Let's work through it together."
+   },
+   "notsetup": {
+    "label": "Not set up (load, tools, or role)",
+    "steps": [
+     "Ask what's getting in the way",
+     "Take one thing off their plate",
+     "Fix one tool or step slowing them"
+    ],
+    "test": [
+     "Remove one task for a week",
+     "Whether the main work improves"
+    ],
+    "opener": "A lot has changed since day one. What would help most?"
+   },
+   "wont": {
+    "label": "Won't (after it was made clear)",
+    "steps": [
+     "Put the expectation and next step in writing",
+     "Have one private, direct, kind talk",
+     "Set a check-back date, and keep it"
+    ],
+    "test": [
+     "Expectation and consequence in writing",
+     "Whether it changes this week"
+    ],
+    "opener": "This has come up before. Let's get clear on what happens next."
+   }
+  },
+  "openers_by_delta": {
+   "volume": "The workload's grown a lot since day one. What would help most?",
+   "role": "The job grew since day one. Which part feels newest?",
+   "systems": "The new setup changed a lot. Where does it slow things?",
+   "reports": "Reporting changed. Is anything unclear now?",
+   "lead": "How I lead has changed. How's that landing?",
+   "paylife": "Things have shifted lately. Is anything making work harder?",
+   "person": "Seems like a heavy stretch. Is everything okay?"
+  },
+  "adds": {
+   "direction": {
+    "Written down": "Put it in writing first",
+    "In a quick talk": "Keep the talk short and specific",
+    "Being shown": "Show it, don't just say it"
+   },
+   "disagree": {
+    "Push back": "Invite the pushback first",
+    "Go quiet": "Ask, then wait. Quiet isn't agreement",
+    "Go along, then don't": "Ask them to say it back"
+   },
+   "driver": {
+    "Pride in the work": "Point to work they're proud of",
+    "Money": "Tie it to pay or bonus",
+    "Respect": "Ask for their view first",
+    "Being trusted": "Hand over the whole piece",
+    "Freedom in how": "Agree the result; let them choose how"
+   },
+   "longtime": "Start with what they've done well for years",
+   "longtime_note": "One bad stretch doesn't erase years of good work."
+  },
+  "talk": {
+   "title": "My conversation plan",
+   "name_blank": "Name: ____________",
+   "parts": [
+    [
+     "Own my part",
+     "30 sec"
+    ],
+    [
+     "Ask and listen",
+     "5 min"
+    ],
+    [
+     "One fact, no judgment",
+     "2 min"
+    ],
+    [
+     "Agree on one thing",
+     "3 min"
+    ],
+    [
+     "Set the check-back",
+     "30 sec"
+    ]
+   ],
+   "if_quiet": "If they go quiet:",
+   "dont_say": "Don't say",
+   "defensive_label": "If they get defensive",
+   "fact_prefix": "Last time,",
+   "fact_none": "Pick one recent example. Just what happened, nothing about why.",
+   "agree": "\"For one week, let's try this: {test}. We'll both watch for: {watch}.\"",
+   "checkback": "\"Let's sit down again on {date}. Same time, 10 minutes.\"",
+   "classes": {
+    "dontknow": {
+     "own": "\"I don't think I ever made this clear. That's on me.\"",
+     "ask": "\"What does 'done' look like to you on this?\"",
+     "backup": "\"If you had to guess, what matters most to me here?\"",
+     "dont": [
+      "\"You should know this by now.\"",
+      "\"Everyone else gets it.\"",
+      "\"How many times do I have to say it?\""
+     ],
+     "defensive": "Pause. \"I'm not here to blame. I'm here to get us clear.\""
+    },
+    "cant": {
+     "own": "\"I put this on your plate without real training. That's on me.\"",
+     "ask": "\"Which part of this feels newest or hardest?\"",
+     "backup": "\"If we started over, where would help matter most?\"",
+     "dont": [
+      "\"It's not that hard.\"",
+      "\"I showed you already.\"",
+      "\"Just figure it out.\""
+     ],
+     "defensive": "\"This is a skill, not a grade. Let's build it together.\""
+    },
+    "notsetup": {
+     "own": "\"A lot changed since day one, and I didn't adjust with it.\"",
+     "ask": "\"What's getting in the way right now?\"",
+     "backup": "\"If one thing came off your plate, what would it be?\"",
+     "dont": [
+      "\"Everyone's busy.\"",
+      "\"That's just the job.\"",
+      "\"Work harder.\""
+     ],
+     "defensive": "\"I'm asking because I want to fix the setup, not you.\""
+    },
+    "wont": {
+     "own": "\"I needed to be clearer and more direct, sooner.\"",
+     "ask": "\"Help me understand what's going on with this.\"",
+     "backup": "\"What would make this work for you?\"",
+     "dont": [
+      "\"You always\u2026\" or \"You never\u2026\"",
+      "\"Your attitude is the problem.\"",
+      "Any threat made in the heat of the moment."
+     ],
+     "defensive": "\"I hear you. And this still needs to change by {date}.\""
+    }
+   },
+   "types": {
+    "employee": {
+     "tip": "Private, short, early in the day.",
+     "ask": null
+    },
+    "longtime": {
+     "tip": "Open with thanks for the years. Mean it.",
+     "ask": null,
+     "own_prefix": "\"You've carried a lot here for years. I see that.\""
+    },
+    "partner": {
+     "tip": "Meet as equals, away from the shop.",
+     "ask": "\"Where do you want this business to be in two years?\""
+    },
+    "vendor": {
+     "tip": "Keep it to the account: dates, specs, payment.",
+     "ask": "\"What would help you deliver on time for us?\""
+    },
+    "customer": {
+     "tip": "Lead with the work and what was promised.",
+     "ask": "\"What would make this right for you?\""
+    },
+    "family": {
+     "tip": "Pick a calm time. Not at dinner, not in front of others.",
+     "ask": "\"What's been weighing on you lately?\""
+    }
+   },
+   "person_words": "\\b(talk|ask|tell|thank|huddle|conversation|share|call|sit down|listening)\\b"
+  }
+ },
+ "evidence": {
+  "money": {
+   "intro": "The last month money ran short",
+   "questions": [
+    {
+     "q": "Where did the money go first?",
+     "options": [
+      {
+       "label": "Payroll and parts",
+       "roots": [
+        "pricing",
+        "overhead"
+       ]
+      },
+      {
+       "label": "Old bills from last month",
+       "roots": [
+        "nocushion",
+        "cashtiming"
+       ]
+      },
+      {
+       "label": "Waiting on customers to pay",
+       "roots": [
+        "collections",
+        "cashtiming"
+       ]
+      },
+      {
+       "label": "A surprise expense",
+       "roots": [
+        "nonumbers",
+        "nocushion"
+       ]
+      }
+     ]
+    },
+    {
+     "q": "How were most jobs priced?",
+     "options": [
+      {
+       "label": "Same prices as last year",
+       "roots": [
+        "pricing"
+       ]
+      },
+      {
+       "label": "Discounted to win them",
+       "roots": [
+        "pricing",
+        "nodifference"
+       ]
+      },
+      {
+       "label": "Small jobs, small tickets",
+       "roots": [
+        "smalljobs"
+       ]
+      },
+      {
+       "label": "Priced on the spot, by feel",
+       "roots": [
+        "pricing",
+        "nonumbers"
+       ]
+      }
+     ]
+    },
+    {
+     "q": "When did the shortfall show up?",
+     "options": [
+      {
+       "label": "Payday, at the last minute",
+       "roots": [
+        "nonumbers",
+        "nocushion"
+       ]
+      },
+      {
+       "label": "When the bank balance dropped",
+       "roots": [
+        "nonumbers"
+       ]
+      },
+      {
+       "label": "When the bookkeeper called",
+       "roots": [
+        "nonumbers",
+        "roles"
+       ]
+      },
+      {
+       "label": "It's been steady for months",
+       "roots": [
+        "pricing",
+        "payself"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "customers": {
+   "intro": "The last job that got away",
+   "questions": [
+    {
+     "q": "How did the first contact come in?",
+     "options": [
+      {
+       "label": "A call that went to voicemail",
+       "roots": [
+        "phones"
+       ]
+      },
+      {
+       "label": "A referral from someone",
+       "roots": [
+        "leadsource"
+       ]
+      },
+      {
+       "label": "Online search or reviews",
+       "roots": [
+        "visibility"
+       ]
+      },
+      {
+       "label": "A past customer coming back",
+       "roots": [
+        "noreturn"
+       ]
+      }
+     ]
+    },
+    {
+     "q": "What happened after first contact?",
+     "options": [
+      {
+       "label": "Quote went out days later",
+       "roots": [
+        "followup"
+       ]
+      },
+      {
+       "label": "Quote went out, then silence",
+       "roots": [
+        "followup",
+        "nodifference"
+       ]
+      },
+      {
+       "label": "Price was the first question",
+       "roots": [
+        "nodifference",
+        "pricing"
+       ]
+      },
+      {
+       "label": "Waited on one person to call back",
+       "roots": [
+        "bottleneck",
+        "phones"
+       ]
+      }
+     ]
+    },
+    {
+     "q": "When did it come to light it was lost?",
+     "options": [
+      {
+       "label": "Weeks later, by chance",
+       "roots": [
+        "followup",
+        "nonumbers"
+       ]
+      },
+      {
+       "label": "They said someone was cheaper",
+       "roots": [
+        "nodifference"
+       ]
+      },
+      {
+       "label": "Never found out",
+       "roots": [
+        "noreturn",
+        "followup"
+       ]
+      },
+      {
+       "label": "Right away, they said no",
+       "roots": [
+        "nodifference"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "people": {
+   "intro": "The last time it happened",
+   "questions": [
+    {
+     "q": "How was the job handed off?",
+     "options": [
+      {
+       "label": "A quick word on the way out",
+       "roots": [
+        "teach",
+        "expectations"
+       ]
+      },
+      {
+       "label": "Same as always, nothing new said",
+       "roots": [
+        "expectations",
+        "inhead"
+       ]
+      },
+      {
+       "label": "Written steps or a checklist",
+       "roots": [
+        "toleratelow",
+        "hiring"
+       ]
+      },
+      {
+       "label": "No hand-off, they just knew",
+       "roots": [
+        "inhead",
+        "roles"
+       ]
+      }
+     ]
+    },
+    {
+     "q": "What was agreed as 'done'?",
+     "options": [
+      {
+       "label": "Nothing specific was agreed",
+       "roots": [
+        "expectations"
+       ]
+      },
+      {
+       "label": "A deadline, nothing on quality",
+       "roots": [
+        "expectations",
+        "rework"
+       ]
+      },
+      {
+       "label": "A clear finish line",
+       "roots": [
+        "toleratelow",
+        "nowhy"
+       ]
+      },
+      {
+       "label": "It came back to the top to decide",
+       "roots": [
+        "decisionrules",
+        "bottleneck"
+       ]
+      }
+     ]
+    },
+    {
+     "q": "When did it come to light?",
+     "options": [
+      {
+       "label": "When the customer complained",
+       "roots": [
+        "nocheckins",
+        "rework"
+       ]
+      },
+      {
+       "label": "At the end, on inspection",
+       "roots": [
+        "nocheckins",
+        "teach"
+       ]
+      },
+      {
+       "label": "Someone on the team mentioned it",
+       "roots": [
+        "unspoken",
+        "nocheckins"
+       ]
+      },
+      {
+       "label": "When they quit or no-showed",
+       "roots": [
+        "nocheckins",
+        "future"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "doing": {
+   "intro": "The last time it landed on my plate",
+   "questions": [
+    {
+     "q": "How did it end up there?",
+     "options": [
+      {
+       "label": "Someone asked a question",
+       "roots": [
+        "decisionrules",
+        "inhead"
+       ]
+      },
+      {
+       "label": "It came back done wrong",
+       "roots": [
+        "teach",
+        "trust"
+       ]
+      },
+      {
+       "label": "Nobody else knows how",
+       "roots": [
+        "inhead",
+        "roles"
+       ]
+      },
+      {
+       "label": "Faster to just grab it",
+       "roots": [
+        "bottleneck",
+        "firefighting"
+       ]
+      }
+     ]
+    },
+    {
+     "q": "What was said or agreed?",
+     "options": [
+      {
+       "label": "Nothing, it was assumed",
+       "roots": [
+        "roles",
+        "expectations"
+       ]
+      },
+      {
+       "label": "'Just call if stuck'",
+       "roots": [
+        "bottleneck",
+        "decisionrules"
+       ]
+      },
+      {
+       "label": "Steps were shown once",
+       "roots": [
+        "teach"
+       ]
+      },
+      {
+       "label": "It was handed off, then taken back",
+       "roots": [
+        "trust"
+       ]
+      }
+     ]
+    },
+    {
+     "q": "When did the day's real work get done?",
+     "options": [
+      {
+       "label": "After everyone left",
+       "roots": [
+        "firefighting",
+        "noboundary"
+       ]
+      },
+      {
+       "label": "Weekends",
+       "roots": [
+        "noboundary",
+        "noreset"
+       ]
+      },
+      {
+       "label": "In between interruptions",
+       "roots": [
+        "bottleneck",
+        "noplanning"
+       ]
+      },
+      {
+       "label": "It didn't",
+       "roots": [
+        "firefighting",
+        "sayyes"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "wornout": {
+   "intro": "The last really bad day",
+   "questions": [
+    {
+     "q": "How did the day start?",
+     "options": [
+      {
+       "label": "Messages already waiting",
+       "roots": [
+        "noboundary",
+        "bottleneck"
+       ]
+      },
+      {
+       "label": "Behind from yesterday",
+       "roots": [
+        "sayyes",
+        "noplanning"
+       ]
+      },
+      {
+       "label": "A problem with a person",
+       "roots": [
+        "unspoken",
+        "toleratelow"
+       ]
+      },
+      {
+       "label": "Already tired before it began",
+       "roots": [
+        "noreset"
+       ]
+      }
+     ]
+    },
+    {
+     "q": "What took most of the day?",
+     "options": [
+      {
+       "label": "Fires and interruptions",
+       "roots": [
+        "firefighting",
+        "bottleneck"
+       ]
+      },
+      {
+       "label": "Work only one person can do",
+       "roots": [
+        "teach",
+        "roles"
+       ]
+      },
+      {
+       "label": "Money worries",
+       "roots": [
+        "nonumbers",
+        "isolation"
+       ]
+      },
+      {
+       "label": "Stuff that drains me",
+       "roots": [
+        "wronghat",
+        "drift"
+       ]
+      }
+     ]
+    },
+    {
+     "q": "When did work actually stop?",
+     "options": [
+      {
+       "label": "Late, after everyone left",
+       "roots": [
+        "noboundary"
+       ]
+      },
+      {
+       "label": "It didn't, still on my mind",
+       "roots": [
+        "isolation",
+        "noreset"
+       ]
+      },
+      {
+       "label": "When I gave up for the night",
+       "roots": [
+        "noreset",
+        "sayyes"
+       ]
+      },
+      {
+       "label": "Not sure",
+       "roots": []
+      }
+     ]
+    }
+   ]
+  },
+  "off": {
+   "intro": "The last time it felt off",
+   "questions": [
+    {
+     "q": "What was going on that week?",
+     "options": [
+      {
+       "label": "Normal week, nothing special",
+       "roots": [
+        "drift",
+        "wronghat"
+       ]
+      },
+      {
+       "label": "Something changed with a customer",
+       "roots": [
+        "change"
+       ]
+      },
+      {
+       "label": "Someone on the team was quiet",
+       "roots": [
+        "nocheckins",
+        "unspoken"
+       ]
+      },
+      {
+       "label": "Running hard, no break",
+       "roots": [
+        "noreset",
+        "firefighting"
+       ]
+      }
+     ]
+    },
+    {
+     "q": "What was said, or not said?",
+     "options": [
+      {
+       "label": "Something was left unsaid",
+       "roots": [
+        "unspoken"
+       ]
+      },
+      {
+       "label": "Nobody talked about the numbers",
+       "roots": [
+        "nonumbers",
+        "nowhy"
+       ]
+      },
+      {
+       "label": "Same talk as every week",
+       "roots": [
+        "drift",
+        "nocheckins"
+       ]
+      },
+      {
+       "label": "Nothing came up at all",
+       "roots": [
+        "nocheckins"
+       ]
+      }
+     ]
+    },
+    {
+     "q": "When did it come to light?",
+     "options": [
+      {
+       "label": "Looking at the numbers",
+       "roots": [
+        "nonumbers",
+        "change"
+       ]
+      },
+      {
+       "label": "Lying awake at night",
+       "roots": [
+        "isolation",
+        "noreset"
+       ]
+      },
+      {
+       "label": "In a talk with someone",
+       "roots": [
+        "unspoken"
+       ]
+      },
+      {
+       "label": "It's been there a while",
+       "roots": [
+        "drift"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "screens": {
+  "s2": {
+   "heading": "When it happens, what does it look like?",
+   "step": 2
+  },
+  "s3": {
+   "heading": "What usually happens right before?",
+   "sub": "Tap the one that shows up most.",
+   "sub_override": {
+    "off": "Or what's been going on around it.",
+    "wornout": "Or what's been going on around it."
+   },
+   "step": 3
+  },
+  "root": {
+   "heading": "Could this be at the root?",
+   "buttons": [
+    "This feels like the root",
+    "What might be behind that?",
+    "Show other possibilities"
+   ],
+   "step": 4,
+   "max_deeper": 2
+  },
+  "own": {
+   "heading": "Anything to add, in my own words?",
+   "placeholder": "Optional. e.g. started when my lead left",
+   "buttons": [
+    "Skip",
+    "Next"
+   ],
+   "step": 4
+  },
+  "fixed": {
+   "heading": "What would 'fixed' look like?",
+   "sub": "Tap the one that matters most.",
+   "step": 5
+  },
+  "actions": {
+   "heading": "Which first moves could work?",
+   "sub": "Pick up to 3. Small and doable beats big.",
+   "more": "Show more",
+   "step": 5
+  },
+  "roadblock": {
+   "heading": "What might get in the way?",
+   "sub": "Tap one, or skip.",
+   "skip": "Nothing in the way, skip",
+   "step": 6
+  },
+  "commit": {
+   "heading": "My first move",
+   "q_first": "Which one first?",
+   "q_when": "By when? Just this week.",
+   "when_sub": "A date I know I'll keep.",
+   "q_who": "Who could help or advise?",
+   "button": "Make my plan",
+   "date_max_days": 7,
+   "step": 6
+  },
+  "plan": {
+   "heading": "My plan",
+   "sections": [
+    "What's driving me crazy",
+    "What it looks like",
+    "What usually happens right before",
+    "What I uncovered",
+    "In my own words",
+    "How I'll know it's fixed",
+    "My one-week test",
+    "Steps I'm committing to",
+    "If something gets in the way",
+    "When I'll look at this again"
+   ],
+   "buttons": [
+    "Save as PDF",
+    "Copy",
+    "Share",
+    "Remind me",
+    "Start over"
+   ],
+   "footer": "Perrone Strategic Systems",
+   "intro": "Just this week. One step at a time.",
+   "format": {
+    "step_line": "{n}. {action} | When: {date} | Who: {who}",
+    "omit_lines_starting": "Not sure",
+    "deeper_line": "{surface}. Underneath that: {deep}",
+    "no_upsell": true
+   }
+  },
+  "evidence": {
+   "heading_prefix": "Walk through it:",
+   "sub": "Tap what happened. Not sure is fine.",
+   "not_sure": "Not sure",
+   "scoring": "s3 root=2 pts, each option root=1 pt; top score = possibility shown; tie -> s3 root; all not sure + s3 not sure -> root list",
+   "step": 3
+  },
+  "test": {
+   "heading": "Want to try one of these for a week and see what happens?",
+   "sub": "No arguing with results. Just a small test.",
+   "watch_label": "Watch for:",
+   "skip": "Skip, go to first moves",
+   "step": 5,
+   "becomes": "chosen test is pre-checked as first move; check-back date = 7 days"
+  }
+ },
+ "none_fit_behavior": {
+  "s1": "go to path 'off' screen 2",
+  "s2": "jump to root list: this path's 5 most-used roots",
+  "s3": "root list for this path",
+  "root_list": "own-words box, then root 'general' (own words become 'What I uncovered')",
+  "fixed": "skip; plan line 'I'll notice it happening less'",
+  "actions": "show more; then root 'general' actions",
+  "s3_not_sure": "instead of one root, show this path's top 3 roots as 'Could any of these be at the root?' + None of these fit",
+  "after_deeper": "actions list = 2 top actions of deepest root + top action of first root, so the plan keeps the thread; plan 'What I uncovered' shows both",
+  "deeper_no_repeat": "never offer a root already seen; max 2 hops, then only 'This feels like the root'",
+  "roadblock": "skip section",
+  "who": "'Just me'",
+  "date": "required: keep date chips, no none-fit (Pick a date covers it)"
+ },
+ "paths": {
+  "money": {
+   "label": "Not enough money left at the end of the month",
+   "s2": [
+    {
+     "id": "money.0",
+     "label": "Busy all month, but the bank doesn't show it",
+     "s3": [
+      {
+       "id": "money.0.0",
+       "label": "Lots of small jobs",
+       "root": "smalljobs"
+      },
+      {
+       "id": "money.0.1",
+       "label": "Re-dos and come-backs",
+       "root": "rework"
+      },
+      {
+       "id": "money.0.2",
+       "label": "Prices haven't moved in a while",
+       "root": "pricing"
+      },
+      {
+       "id": "money.0.3",
+       "label": "Money comes in, then goes straight out",
+       "root": "cashtiming"
+      },
+      {
+       "id": "money.0.4",
+       "label": "Not sure what happens right before",
+       "root": "nonumbers"
+      }
+     ]
+    },
+    {
+     "id": "money.1",
+     "label": "Customers pay late, or not at all",
+     "s3": [
+      {
+       "id": "money.1.0",
+       "label": "Work starts before any deposit",
+       "root": "cashtiming"
+      },
+      {
+       "id": "money.1.1",
+       "label": "Invoices go out days after the job",
+       "root": "cashtiming"
+      },
+      {
+       "id": "money.1.2",
+       "label": "Nobody follows up on unpaid bills",
+       "root": "collections"
+      },
+      {
+       "id": "money.1.3",
+       "label": "Payment terms never agreed up front",
+       "root": "collections"
+      },
+      {
+       "id": "money.1.4",
+       "label": "Not sure, it just piles up",
+       "root": "collections"
+      }
+     ]
+    },
+    {
+     "id": "money.2",
+     "label": "Bills pile up and I juggle who gets paid",
+     "s3": [
+      {
+       "id": "money.2.0",
+       "label": "A slow week hits with no cushion",
+       "root": "nocushion"
+      },
+      {
+       "id": "money.2.1",
+       "label": "A big bill shows up unexpected",
+       "root": "nonumbers"
+      },
+      {
+       "id": "money.2.2",
+       "label": "Paying for things nobody uses",
+       "root": "overhead"
+      },
+      {
+       "id": "money.2.3",
+       "label": "Borrowing to cover last month",
+       "root": "nocushion"
+      },
+      {
+       "id": "money.2.4",
+       "label": "Not sure, it's been like this a while",
+       "root": "nonumbers"
+      }
+     ]
+    },
+    {
+     "id": "money.3",
+     "label": "I can't pay myself what I should",
+     "s3": [
+      {
+       "id": "money.3.0",
+       "label": "Everyone else gets paid first",
+       "root": "payself"
+      },
+      {
+       "id": "money.3.1",
+       "label": "Costs went up, prices stayed put",
+       "root": "pricing"
+      },
+      {
+       "id": "money.3.2",
+       "label": "Added help, but sales didn't grow",
+       "root": "overhead"
+      },
+      {
+       "id": "money.3.3",
+       "label": "Discounting to win the job",
+       "root": "pricing"
+      },
+      {
+       "id": "money.3.4",
+       "label": "Not sure where it goes",
+       "root": "nonumbers"
+      }
+     ]
+    },
+    {
+     "id": "money.4",
+     "label": "Not sure, the money just disappears",
+     "s3": [
+      {
+       "id": "money.4.0",
+       "label": "Checking the bank, not real numbers",
+       "root": "nonumbers"
+      },
+      {
+       "id": "money.4.1",
+       "label": "Books get done months later",
+       "root": "nonumbers"
+      },
+      {
+       "id": "money.4.2",
+       "label": "Small charges add up unnoticed",
+       "root": "overhead"
+      },
+      {
+       "id": "money.4.3",
+       "label": "Never sure which jobs make money",
+       "root": "pricing"
+      },
+      {
+       "id": "money.4.4",
+       "label": "Business and personal money mix",
+       "root": "nonumbers"
+      }
+     ]
+    }
+   ],
+   "root_list": [
+    "nonumbers",
+    "pricing",
+    "cashtiming",
+    "collections",
+    "overhead"
+   ]
+  },
+  "customers": {
+   "label": "Not enough customers or work coming in",
+   "s2": [
+    {
+     "id": "customers.0",
+     "label": "Phone's quiet some weeks, slammed others",
+     "s3": [
+      {
+       "id": "customers.0.0",
+       "label": "Marketing happens only when it's slow",
+       "root": "feastfamine"
+      },
+      {
+       "id": "customers.0.1",
+       "label": "All work comes from word of mouth",
+       "root": "leadsource"
+      },
+      {
+       "id": "customers.0.2",
+       "label": "One or two big customers carry us",
+       "root": "concentration"
+      },
+      {
+       "id": "customers.0.3",
+       "label": "Seasons swing and nobody plans for it",
+       "root": "noplanning"
+      },
+      {
+       "id": "customers.0.4",
+       "label": "Not sure, it just comes and goes",
+       "root": "leadsource"
+      }
+     ]
+    },
+    {
+     "id": "customers.1",
+     "label": "People ask for prices, then disappear",
+     "s3": [
+      {
+       "id": "customers.1.0",
+       "label": "Quotes take days to go out",
+       "root": "followup"
+      },
+      {
+       "id": "customers.1.1",
+       "label": "Nobody calls back after the quote",
+       "root": "followup"
+      },
+      {
+       "id": "customers.1.2",
+       "label": "We sound like everyone else",
+       "root": "nodifference"
+      },
+      {
+       "id": "customers.1.3",
+       "label": "Price comes up before anything else",
+       "root": "nodifference"
+      },
+      {
+       "id": "customers.1.4",
+       "label": "Not sure what happens after",
+       "root": "followup"
+      }
+     ]
+    },
+    {
+     "id": "customers.2",
+     "label": "Calls go to voicemail or get missed",
+     "s3": [
+      {
+       "id": "customers.2.0",
+       "label": "Everyone's busy on the job",
+       "root": "phones"
+      },
+      {
+       "id": "customers.2.1",
+       "label": "After hours, nobody picks up",
+       "root": "phones"
+      },
+      {
+       "id": "customers.2.2",
+       "label": "Messages wait for one person",
+       "root": "bottleneck"
+      },
+      {
+       "id": "customers.2.3",
+       "label": "Callbacks happen next day, if ever",
+       "root": "followup"
+      },
+      {
+       "id": "customers.2.4",
+       "label": "Not sure how many get missed",
+       "root": "phones"
+      }
+     ]
+    },
+    {
+     "id": "customers.3",
+     "label": "Old customers don't come back",
+     "s3": [
+      {
+       "id": "customers.3.0",
+       "label": "No contact after the job's done",
+       "root": "noreturn"
+      },
+      {
+       "id": "customers.3.1",
+       "label": "Never asked for a review or referral",
+       "root": "noreturn"
+      },
+      {
+       "id": "customers.3.2",
+       "label": "Something went wrong and nobody called",
+       "root": "rework"
+      },
+      {
+       "id": "customers.3.3",
+       "label": "They found someone cheaper",
+       "root": "nodifference"
+      },
+      {
+       "id": "customers.3.4",
+       "label": "Not sure where they went",
+       "root": "noreturn"
+      }
+     ]
+    },
+    {
+     "id": "customers.4",
+     "label": "Not sure, work just dried up",
+     "s3": [
+      {
+       "id": "customers.4.0",
+       "label": "Something changed: area, rules, or competition",
+       "root": "change"
+      },
+      {
+       "id": "customers.4.1",
+       "label": "Stopped doing what used to work",
+       "root": "feastfamine"
+      },
+      {
+       "id": "customers.4.2",
+       "label": "Hard to find us online",
+       "root": "visibility"
+      },
+      {
+       "id": "customers.4.3",
+       "label": "Bad reviews sitting unanswered",
+       "root": "visibility"
+      },
+      {
+       "id": "customers.4.4",
+       "label": "Not sure yet",
+       "root": "leadsource"
+      }
+     ]
+    }
+   ],
+   "root_list": [
+    "followup",
+    "leadsource",
+    "nodifference",
+    "phones",
+    "noreturn"
+   ]
+  },
+  "people": {
+   "label": "My people aren't doing what they should",
+   "s2": [
+    {
+     "id": "people.0",
+     "label": "They leave without warning",
+     "s3": [
+      {
+       "id": "people.0.0",
+       "label": "Hired fast just to fill the seat",
+       "root": "hiring"
+      },
+      {
+       "id": "people.0.1",
+       "label": "No regular talks until it's too late",
+       "root": "nocheckins"
+      },
+      {
+       "id": "people.0.2",
+       "label": "Pay or next step topped out",
+       "root": "future"
+      },
+      {
+       "id": "people.0.3",
+       "label": "A rough week, tempers, then gone",
+       "root": "nocheckins"
+      },
+      {
+       "id": "people.0.4",
+       "label": "Not sure, they just stop showing",
+       "root": "nocheckins"
+      }
+     ]
+    },
+    {
+     "id": "people.1",
+     "label": "They don't follow how things should be done",
+     "s3": [
+      {
+       "id": "people.1.0",
+       "label": "The right way was never written down",
+       "root": "inhead"
+      },
+      {
+       "id": "people.1.1",
+       "label": "Different people show it differently",
+       "root": "expectations"
+      },
+      {
+       "id": "people.1.2",
+       "label": "Shortcuts happen and nothing gets said",
+       "root": "toleratelow"
+      },
+      {
+       "id": "people.1.3",
+       "label": "Rushed onto the job, no training",
+       "root": "teach"
+      },
+      {
+       "id": "people.1.4",
+       "label": "Not sure, it's just how it goes",
+       "root": "expectations"
+      }
+     ]
+    },
+    {
+     "id": "people.2",
+     "label": "They need me for every decision",
+     "s3": [
+      {
+       "id": "people.2.0",
+       "label": "Last time they decided, it went wrong",
+       "root": "trust"
+      },
+      {
+       "id": "people.2.1",
+       "label": "Nobody knows what they can decide alone",
+       "root": "decisionrules"
+      },
+      {
+       "id": "people.2.2",
+       "label": "Quick answers come from the top",
+       "root": "bottleneck"
+      },
+      {
+       "id": "people.2.3",
+       "label": "The answers aren't written anywhere",
+       "root": "inhead"
+      },
+      {
+       "id": "people.2.4",
+       "label": "Not sure, always been this way",
+       "root": "decisionrules"
+      }
+     ]
+    },
+    {
+     "id": "people.3",
+     "label": "Good ones leave, weak ones stay",
+     "s3": [
+      {
+       "id": "people.3.0",
+       "label": "Good ones carry the weak ones' load",
+       "root": "toleratelow"
+      },
+      {
+       "id": "people.3.1",
+       "label": "Hard talks keep getting put off",
+       "root": "unspoken"
+      },
+      {
+       "id": "people.3.2",
+       "label": "Good work and bad get the same pay",
+       "root": "recognition"
+      },
+      {
+       "id": "people.3.3",
+       "label": "No next step for the good ones",
+       "root": "future"
+      },
+      {
+       "id": "people.3.4",
+       "label": "Not sure why it goes that way",
+       "root": "toleratelow"
+      }
+     ]
+    },
+    {
+     "id": "people.4",
+     "label": "Nobody cares like I do",
+     "s3": [
+      {
+       "id": "people.4.0",
+       "label": "They don't see the numbers or the why",
+       "root": "nowhy"
+      },
+      {
+       "id": "people.4.1",
+       "label": "Good work goes by unnoticed",
+       "root": "recognition"
+      },
+      {
+       "id": "people.4.2",
+       "label": "They get told what, not why",
+       "root": "nowhy"
+      },
+      {
+       "id": "people.4.3",
+       "label": "Fixes happen quietly, nothing gets said",
+       "root": "bottleneck"
+      },
+      {
+       "id": "people.4.4",
+       "label": "Not sure, it's always been this way",
+       "root": "expectations"
+      }
+     ]
+    },
+    {
+     "id": "people.5",
+     "label": "Not sure, it just keeps happening",
+     "s3": [
+      {
+       "id": "people.5.0",
+       "label": "Same problem, different person",
+       "root": "expectations"
+      },
+      {
+       "id": "people.5.1",
+       "label": "Things get missed between people",
+       "root": "roles"
+      },
+      {
+       "id": "people.5.2",
+       "label": "Rarely a one-on-one talk",
+       "root": "nocheckins"
+      },
+      {
+       "id": "people.5.3",
+       "label": "Stretched too thin to notice early",
+       "root": "firefighting"
+      },
+      {
+       "id": "people.5.4",
+       "label": "Not sure yet",
+       "root": "nocheckins"
+      }
+     ]
+    }
+   ],
+   "root_list": [
+    "nocheckins",
+    "expectations",
+    "toleratelow",
+    "future",
+    "inhead"
+   ]
+  },
+  "doing": {
+   "label": "I'm doing everything myself",
+   "s2": [
+    {
+     "id": "doing.0",
+     "label": "Faster if I just do it myself",
+     "s3": [
+      {
+       "id": "doing.0.0",
+       "label": "Showed once and it came back wrong",
+       "root": "teach"
+      },
+      {
+       "id": "doing.0.1",
+       "label": "Teaching time keeps getting bumped",
+       "root": "firefighting"
+      },
+      {
+       "id": "doing.0.2",
+       "label": "How it's done isn't written anywhere",
+       "root": "inhead"
+      },
+      {
+       "id": "doing.0.3",
+       "label": "A hand-off went badly before",
+       "root": "trust"
+      },
+      {
+       "id": "doing.0.4",
+       "label": "It's always been this way",
+       "root": "roles"
+      }
+     ]
+    },
+    {
+     "id": "doing.1",
+     "label": "Calls, texts, and questions all day long",
+     "s3": [
+      {
+       "id": "doing.1.0",
+       "label": "Everyone has my cell number",
+       "root": "noboundary"
+      },
+      {
+       "id": "doing.1.1",
+       "label": "Nobody else can answer the basics",
+       "root": "inhead"
+      },
+      {
+       "id": "doing.1.2",
+       "label": "Every decision has to come to me",
+       "root": "decisionrules"
+      },
+      {
+       "id": "doing.1.3",
+       "label": "Every question gets an instant answer",
+       "root": "bottleneck"
+      },
+      {
+       "id": "doing.1.4",
+       "label": "Not sure how it got like this",
+       "root": "roles"
+      }
+     ]
+    },
+    {
+     "id": "doing.2",
+     "label": "Paperwork and admin wait till night",
+     "s3": [
+      {
+       "id": "doing.2.0",
+       "label": "Days go to jobs and fires",
+       "root": "firefighting"
+      },
+      {
+       "id": "doing.2.1",
+       "label": "Nobody else is allowed to touch it",
+       "root": "trust"
+      },
+      {
+       "id": "doing.2.2",
+       "label": "Nobody's been hired for it",
+       "root": "roles"
+      },
+      {
+       "id": "doing.2.3",
+       "label": "Systems are old or on paper",
+       "root": "inhead"
+      },
+      {
+       "id": "doing.2.4",
+       "label": "Not sure, it just lands on me",
+       "root": "roles"
+      }
+     ]
+    },
+    {
+     "id": "doing.3",
+     "label": "The business stalls when I'm out",
+     "s3": [
+      {
+       "id": "doing.3.0",
+       "label": "No real day off in ages",
+       "root": "noreset"
+      },
+      {
+       "id": "doing.3.1",
+       "label": "No second-in-command",
+       "root": "roles"
+      },
+      {
+       "id": "doing.3.2",
+       "label": "Customers only want to talk to me",
+       "root": "bottleneck"
+      },
+      {
+       "id": "doing.3.3",
+       "label": "How-tos aren't written anywhere",
+       "root": "inhead"
+      },
+      {
+       "id": "doing.3.4",
+       "label": "Not sure, it's always been like that",
+       "root": "roles"
+      }
+     ]
+    },
+    {
+     "id": "doing.4",
+     "label": "Not sure, just always behind",
+     "s3": [
+      {
+       "id": "doing.4.0",
+       "label": "Days start with no plan",
+       "root": "noplanning"
+      },
+      {
+       "id": "doing.4.1",
+       "label": "Every request gets a yes",
+       "root": "sayyes"
+      },
+      {
+       "id": "doing.4.2",
+       "label": "Small fires eat the big stuff",
+       "root": "firefighting"
+      },
+      {
+       "id": "doing.4.3",
+       "label": "Short-staffed and can't find help",
+       "root": "hiring"
+      },
+      {
+       "id": "doing.4.4",
+       "label": "Not sure yet",
+       "root": "noplanning"
+      }
+     ]
+    }
+   ],
+   "root_list": [
+    "roles",
+    "inhead",
+    "firefighting",
+    "trust",
+    "bottleneck"
+   ]
+  },
+  "wornout": {
+   "label": "I'm worn out and dreading tomorrow",
+   "s2": [
+    {
+     "id": "wornout.0",
+     "label": "Dreading the phone first thing in the morning",
+     "s3": [
+      {
+       "id": "wornout.0.0",
+       "label": "Last night's problems are waiting",
+       "root": "noboundary"
+      },
+      {
+       "id": "wornout.0.1",
+       "label": "Every message needs one person",
+       "root": "bottleneck"
+      },
+      {
+       "id": "wornout.0.2",
+       "label": "Bad news is all that comes in",
+       "root": "firefighting"
+      },
+      {
+       "id": "wornout.0.3",
+       "label": "Mind still running, not much sleep",
+       "root": "noreset"
+      },
+      {
+       "id": "wornout.0.4",
+       "label": "Not sure, it just hits",
+       "root": "noreset"
+      }
+     ]
+    },
+    {
+     "id": "wornout.1",
+     "label": "Same fires every single day",
+     "s3": [
+      {
+       "id": "wornout.1.0",
+       "label": "Patch it, no time for the real fix",
+       "root": "firefighting"
+      },
+      {
+       "id": "wornout.1.1",
+       "label": "Same mistake from the same spot",
+       "root": "rework"
+      },
+      {
+       "id": "wornout.1.2",
+       "label": "Nobody else sees it coming",
+       "root": "roles"
+      },
+      {
+       "id": "wornout.1.3",
+       "label": "Jobs booked tighter than they fit",
+       "root": "sayyes"
+      },
+      {
+       "id": "wornout.1.4",
+       "label": "Not sure why they keep coming",
+       "root": "firefighting"
+      }
+     ]
+    },
+    {
+     "id": "wornout.2",
+     "label": "Nights and weekends just to keep up",
+     "s3": [
+      {
+       "id": "wornout.2.0",
+       "label": "Interruptions eat the whole day",
+       "root": "noboundary"
+      },
+      {
+       "id": "wornout.2.1",
+       "label": "Admin waits until everyone leaves",
+       "root": "roles"
+      },
+      {
+       "id": "wornout.2.2",
+       "label": "Can't afford more help yet",
+       "root": "pricing"
+      },
+      {
+       "id": "wornout.2.3",
+       "label": "Only one person does it right",
+       "root": "teach"
+      },
+      {
+       "id": "wornout.2.4",
+       "label": "Not sure, the hours just crept up",
+       "root": "noboundary"
+      }
+     ]
+    },
+    {
+     "id": "wornout.3",
+     "label": "Short fuse at work or at home",
+     "s3": [
+      {
+       "id": "wornout.3.0",
+       "label": "Running on no sleep",
+       "root": "noreset"
+      },
+      {
+       "id": "wornout.3.1",
+       "label": "Holding in stuff that should be said",
+       "root": "unspoken"
+      },
+      {
+       "id": "wornout.3.2",
+       "label": "Money stress nobody else knows about",
+       "root": "isolation"
+      },
+      {
+       "id": "wornout.3.3",
+       "label": "No break in weeks",
+       "root": "noreset"
+      },
+      {
+       "id": "wornout.3.4",
+       "label": "Not sure where it comes from",
+       "root": "isolation"
+      }
+     ]
+    },
+    {
+     "id": "wornout.4",
+     "label": "Not sure, just running on empty",
+     "s3": [
+      {
+       "id": "wornout.4.0",
+       "label": "No real day off in a long time",
+       "root": "noreset"
+      },
+      {
+       "id": "wornout.4.1",
+       "label": "Carrying it all alone",
+       "root": "isolation"
+      },
+      {
+       "id": "wornout.4.2",
+       "label": "Lost sight of why I started",
+       "root": "drift"
+      },
+      {
+       "id": "wornout.4.3",
+       "label": "Money's been tight a while",
+       "root": "nonumbers"
+      },
+      {
+       "id": "wornout.4.4",
+       "label": "Not sure yet",
+       "root": "drift"
+      }
+     ]
+    }
+   ],
+   "root_list": [
+    "noreset",
+    "noboundary",
+    "firefighting",
+    "isolation",
+    "roles"
+   ]
+  },
+  "off": {
+   "label": "Something just feels off",
+   "s2": [
+    {
+     "id": "off.0",
+     "label": "Fine on paper, but not fun anymore",
+     "s3": [
+      {
+       "id": "off.0.0",
+       "label": "Same work, year after year",
+       "root": "drift"
+      },
+      {
+       "id": "off.0.1",
+       "label": "Most days go to stuff I dislike",
+       "root": "wronghat"
+      },
+      {
+       "id": "off.0.2",
+       "label": "No goal I'm chasing anymore",
+       "root": "drift"
+      },
+      {
+       "id": "off.0.3",
+       "label": "The team's energy feels flat",
+       "root": "nowhy"
+      },
+      {
+       "id": "off.0.4",
+       "label": "Not sure when it changed",
+       "root": "drift"
+      }
+     ]
+    },
+    {
+     "id": "off.1",
+     "label": "Tension in the shop nobody talks about",
+     "s3": [
+      {
+       "id": "off.1.0",
+       "label": "A problem person nobody's dealt with",
+       "root": "toleratelow"
+      },
+      {
+       "id": "off.1.1",
+       "label": "Something changed and nobody explained it",
+       "root": "unspoken"
+      },
+      {
+       "id": "off.1.2",
+       "label": "Talk behind backs, not face to face",
+       "root": "unspoken"
+      },
+      {
+       "id": "off.1.3",
+       "label": "Rules apply to some, not others",
+       "root": "expectations"
+      },
+      {
+       "id": "off.1.4",
+       "label": "Not sure where it starts",
+       "root": "nocheckins"
+      }
+     ]
+    },
+    {
+     "id": "off.2",
+     "label": "Numbers slipping, can't say why",
+     "s3": [
+      {
+       "id": "off.2.0",
+       "label": "Numbers get checked only now and then",
+       "root": "nonumbers"
+      },
+      {
+       "id": "off.2.1",
+       "label": "A customer or market shifted",
+       "root": "change"
+      },
+      {
+       "id": "off.2.2",
+       "label": "Quality slipped a little",
+       "root": "rework"
+      },
+      {
+       "id": "off.2.3",
+       "label": "Prices haven't moved in a while",
+       "root": "pricing"
+      },
+      {
+       "id": "off.2.4",
+       "label": "Not sure yet",
+       "root": "nonumbers"
+      }
+     ]
+    },
+    {
+     "id": "off.3",
+     "label": "Busy, but not getting anywhere",
+     "s3": [
+      {
+       "id": "off.3.0",
+       "label": "No clear goal for this year",
+       "root": "drift"
+      },
+      {
+       "id": "off.3.1",
+       "label": "Days go to whatever's loudest",
+       "root": "firefighting"
+      },
+      {
+       "id": "off.3.2",
+       "label": "Big ideas start, then stall",
+       "root": "noplanning"
+      },
+      {
+       "id": "off.3.3",
+       "label": "Nobody tracks if things got done",
+       "root": "nocheckins"
+      },
+      {
+       "id": "off.3.4",
+       "label": "Not sure",
+       "root": "noplanning"
+      }
+     ]
+    },
+    {
+     "id": "off.4",
+     "label": "Not sure, just a gut feeling",
+     "s3": [
+      {
+       "id": "off.4.0",
+       "label": "Something changed recently",
+       "root": "change"
+      },
+      {
+       "id": "off.4.1",
+       "label": "Customers sound different lately",
+       "root": "change"
+      },
+      {
+       "id": "off.4.2",
+       "label": "A key person seems checked out",
+       "root": "nocheckins"
+      },
+      {
+       "id": "off.4.3",
+       "label": "More tired than I let on",
+       "root": "noreset"
+      },
+      {
+       "id": "off.4.4",
+       "label": "Not sure yet",
+       "root": "drift"
+      }
+     ]
+    }
+   ],
+   "root_list": [
+    "drift",
+    "nocheckins",
+    "change",
+    "unspoken",
+    "nonumbers"
+   ]
+  }
+ },
+ "roots": {
+  "pricing": {
+   "experiments": [
+    {
+     "try": "Quote 10% higher on the next 5 jobs",
+     "watch": "How many still say yes"
+    },
+    {
+     "try": "Add a minimum charge on small jobs",
+     "watch": "Whether anyone actually walks away"
+    }
+   ],
+   "statement": "My prices haven't kept up with my costs",
+   "deeper": [
+    "nonumbers",
+    "nodifference",
+    "sayyes"
+   ],
+   "fixed": [
+    "Prices reviewed and raised this quarter",
+    "Every job type shows a profit",
+    "Bank balance grows month to month",
+    "No job quoted below cost"
+   ],
+   "actions_top3": [
+    "List 5 jobs: price vs. real cost",
+    "Raise one price on the next quote",
+    "Ask bookkeeper which jobs lose money"
+   ],
+   "actions_more": [
+    "Check what 3 competitors charge",
+    "Add a minimum charge for small jobs",
+    "Drop the deepest discount"
+   ],
+   "roadblocks": [
+    "customer",
+    "numbers",
+    "wait"
+   ],
+   "default_helper": "bookkeeper"
+  },
+  "smalljobs": {
+   "experiments": [
+    {
+     "try": "Turn down or refer every tiny job",
+     "watch": "Hours freed, money lost (if any)"
+    },
+    {
+     "try": "Batch small jobs into one day",
+     "watch": "Time saved versus the usual week"
+    }
+   ],
+   "statement": "Too much time goes to jobs that barely pay",
+   "deeper": [
+    "pricing",
+    "sayyes",
+    "nonumbers"
+   ],
+   "fixed": [
+    "Small jobs have a minimum price",
+    "Room on the calendar for bigger jobs",
+    "Fewer jobs, same or more money",
+    "Each week's top jobs actually pay"
+   ],
+   "actions_top3": [
+    "Circle last month's 5 worst-paying jobs",
+    "Set a minimum charge",
+    "Batch small jobs into one day"
+   ],
+   "actions_more": [
+    "Refer tiny jobs to someone else",
+    "Say no to one poor-fit job",
+    "Ask what bigger jobs got turned down"
+   ],
+   "roadblocks": [
+    "customer",
+    "wait",
+    "numbers"
+   ],
+   "default_helper": "me"
+  },
+  "rework": {
+   "experiments": [
+    {
+     "try": "Do a 2-minute final check on every job",
+     "watch": "Callbacks this week versus last"
+    },
+    {
+     "try": "Log every re-do and its cause",
+     "watch": "Which cause shows up most"
+    }
+   ],
+   "statement": "Re-dos are quietly eating the profit",
+   "deeper": [
+    "teach",
+    "expectations",
+    "firefighting"
+   ],
+   "fixed": [
+    "Re-dos counted and dropping monthly",
+    "Final check before every job goes out",
+    "Same mistake doesn't happen twice",
+    "Fewer callbacks from customers"
+   ],
+   "actions_top3": [
+    "Count re-dos from the last 30 days",
+    "Find the one mistake that repeats most",
+    "Add a 2-minute final check"
+   ],
+   "actions_more": [
+    "Ask the crew what causes re-dos",
+    "Show the team what one re-do costs",
+    "Write the fix for the top mistake"
+   ],
+   "roadblocks": [
+    "pushback",
+    "time",
+    "old"
+   ],
+   "default_helper": "number2"
+  },
+  "cashtiming": {
+   "experiments": [
+    {
+     "try": "Invoice every job the same day",
+     "watch": "Days until money lands"
+    },
+    {
+     "try": "Ask a deposit on every new job",
+     "watch": "How many push back, really"
+    }
+   ],
+   "statement": "Money goes out before it comes in",
+   "deeper": [
+    "collections",
+    "nocushion",
+    "nonumbers"
+   ],
+   "fixed": [
+    "Deposits collected before work starts",
+    "Invoices go out the same day",
+    "Bills paid on time, no juggling",
+    "Next month's cash is clear ahead"
+   ],
+   "actions_top3": [
+    "Ask for a deposit on the next job",
+    "Send invoices the same day",
+    "List money in and out, next 4 weeks"
+   ],
+   "actions_more": [
+    "Move big bills to after money lands",
+    "Offer card or online payment",
+    "Get a weekly cash view from bookkeeper"
+   ],
+   "roadblocks": [
+    "customer",
+    "numbers",
+    "forget"
+   ],
+   "default_helper": "bookkeeper"
+  },
+  "collections": {
+   "experiments": [
+    {
+     "try": "Call every bill over 30 days",
+     "watch": "Money collected by Friday"
+    },
+    {
+     "try": "Send a friendly reminder at 7 days",
+     "watch": "Payments that come in faster"
+    }
+   ],
+   "statement": "Nobody owns chasing what's owed",
+   "deeper": [
+    "roles",
+    "cashtiming",
+    "unspoken"
+   ],
+   "fixed": [
+    "Every bill over 30 days gets a call",
+    "One person owns collections",
+    "Money owed drops each month",
+    "Payment terms agreed before work"
+   ],
+   "actions_top3": [
+    "List everyone owing over 30 days",
+    "Call the 3 biggest this week",
+    "Put payment terms on every quote"
+   ],
+   "actions_more": [
+    "Give one person the follow-up job",
+    "Set a reminder 7 days after invoice",
+    "Pause work for 60-day-late accounts"
+   ],
+   "roadblocks": [
+    "awkward",
+    "noone",
+    "customer"
+   ],
+   "default_helper": "number2"
+  },
+  "nocushion": {
+   "experiments": [
+    {
+     "try": "Move 1% of every deposit aside",
+     "watch": "How little it's missed"
+    },
+    {
+     "try": "Pause one bill nobody needs",
+     "watch": "The balance at week's end"
+    }
+   ],
+   "statement": "There's no cash cushion for slow weeks",
+   "deeper": [
+    "pricing",
+    "payself",
+    "nonumbers"
+   ],
+   "fixed": [
+    "Two weeks of bills set aside",
+    "Slow weeks without borrowing",
+    "A savings balance that only grows",
+    "No juggling who gets paid"
+   ],
+   "actions_top3": [
+    "Open a separate cushion account",
+    "Move 1% of every deposit into it",
+    "List bills that could be paused"
+   ],
+   "actions_more": [
+    "Cut one cost this month",
+    "Set a cushion target with bookkeeper",
+    "Put one overdue payment into it"
+   ],
+   "roadblocks": [
+    "cost",
+    "numbers",
+    "wait"
+   ],
+   "default_helper": "bookkeeper"
+  },
+  "payself": {
+   "experiments": [
+    {
+     "try": "Pay myself a set amount Friday",
+     "watch": "Whether the business still runs fine"
+    },
+    {
+     "try": "Price jobs with my pay included",
+     "watch": "Whether customers notice at all"
+    }
+   ],
+   "statement": "I pay myself last, with whatever's left",
+   "deeper": [
+    "pricing",
+    "nocushion",
+    "overhead"
+   ],
+   "fixed": [
+    "My pay treated like any other wage",
+    "Owner pay on a set day",
+    "My pay covered, even slow months",
+    "No guilt cashing my own check"
+   ],
+   "actions_top3": [
+    "Pay myself like any other worker",
+    "Pick a set owner-pay amount and day",
+    "Ask bookkeeper what's realistic now"
+   ],
+   "actions_more": [
+    "Start small, raise it monthly",
+    "Price the next job with my pay in it",
+    "Give owner pay its own account"
+   ],
+   "roadblocks": [
+    "numbers",
+    "cost",
+    "old"
+   ],
+   "default_helper": "bookkeeper"
+  },
+  "nonumbers": {
+   "experiments": [
+    {
+     "try": "Look at 5 numbers every morning",
+     "watch": "One surprise caught early"
+    },
+    {
+     "try": "Check cash in and out daily",
+     "watch": "Where money leaks without notice"
+    }
+   ],
+   "statement": "I don't see the real numbers until too late",
+   "deeper": [
+    "roles",
+    "isolation",
+    "pricing"
+   ],
+   "fixed": [
+    "I know where things stand every week",
+    "Books closed by the 10th",
+    "I know which jobs make money",
+    "No more money surprises"
+   ],
+   "actions_top3": [
+    "Ask bookkeeper for a one-page monthly report",
+    "Look at the real numbers every Monday",
+    "Ask bookkeeper for 5 numbers to watch"
+   ],
+   "actions_more": [
+    "Split business and personal cards",
+    "Look at last month's profit by job",
+    "Get the books caught up to last month"
+   ],
+   "roadblocks": [
+    "numbers",
+    "time",
+    "forget"
+   ],
+   "default_helper": "bookkeeper"
+  },
+  "overhead": {
+   "experiments": [
+    {
+     "try": "Pause one repeating charge",
+     "watch": "Whether anyone misses it"
+    },
+    {
+     "try": "Ask for a better price on one bill",
+     "watch": "Dollars saved by one call"
+    }
+   ],
+   "statement": "Costs crept up and nobody's checking",
+   "deeper": [
+    "nonumbers",
+    "roles",
+    "payself"
+   ],
+   "fixed": [
+    "Every repeating charge has a reason",
+    "Costs reviewed every quarter",
+    "Overhead under a set target",
+    "No surprise charges on the statement"
+   ],
+   "actions_top3": [
+    "Print last month's card statement",
+    "Cancel one thing nobody uses",
+    "List every repeating charge"
+   ],
+   "actions_more": [
+    "Get 2 quotes on insurance or supplies",
+    "Set a quarterly cost review",
+    "Ask bookkeeper which cost grew most"
+   ],
+   "roadblocks": [
+    "time",
+    "numbers",
+    "forget"
+   ],
+   "default_helper": "bookkeeper"
+  },
+  "feastfamine": {
+   "experiments": [
+    {
+     "try": "Spend 30 minutes a day on outreach",
+     "watch": "Calls and quotes next week"
+    },
+    {
+     "try": "Text 10 past customers",
+     "watch": "How many reply or book"
+    }
+   ],
+   "statement": "Chasing work only happens when it's slow",
+   "deeper": [
+    "noplanning",
+    "leadsource",
+    "roles"
+   ],
+   "fixed": [
+    "Steady calls, even in busy weeks",
+    "One small marketing task every week",
+    "Booked 2 to 3 weeks out",
+    "No panic in slow weeks"
+   ],
+   "actions_top3": [
+    "Block 30 minutes weekly for getting work",
+    "Text 5 past customers this week",
+    "Ask one happy customer for a referral"
+   ],
+   "actions_more": [
+    "Post one job photo a week",
+    "Hand weekly outreach to one person",
+    "Restart what used to bring work"
+   ],
+   "roadblocks": [
+    "time",
+    "forget",
+    "fire"
+   ],
+   "default_helper": "me"
+  },
+  "leadsource": {
+   "experiments": [
+    {
+     "try": "Ask every caller how they found us",
+     "watch": "Where work really comes from"
+    },
+    {
+     "try": "Ask 5 happy customers for reviews",
+     "watch": "New reviews and calls"
+    }
+   ],
+   "statement": "Work only comes from word of mouth",
+   "deeper": [
+    "visibility",
+    "noreturn",
+    "feastfamine"
+   ],
+   "fixed": [
+    "At least 3 ways new work comes in",
+    "Known source for every new customer",
+    "New calls weekly, not just referrals",
+    "Referrals asked for on purpose"
+   ],
+   "actions_top3": [
+    "Ask every caller how they found us",
+    "Update the Google business profile",
+    "Ask 3 customers for a review"
+   ],
+   "actions_more": [
+    "Reconnect with 2 referral partners",
+    "Try one new source for 30 days",
+    "Thank last month's referrers"
+   ],
+   "roadblocks": [
+    "dontknow",
+    "time",
+    "cost"
+   ],
+   "default_helper": "me"
+  },
+  "concentration": {
+   "experiments": [
+    {
+     "try": "Reach out to 5 new prospects",
+     "watch": "How many conversations start"
+    },
+    {
+     "try": "Ask the biggest customer for one referral",
+     "watch": "Whether a new door opens"
+    }
+   ],
+   "statement": "Too much rides on a few customers",
+   "deeper": [
+    "leadsource",
+    "feastfamine",
+    "nodifference"
+   ],
+   "fixed": [
+    "No customer over a quarter of sales",
+    "New customers added every month",
+    "Losing one wouldn't sink us",
+    "Big customers on clear agreements"
+   ],
+   "actions_top3": [
+    "List top 5 customers and their share",
+    "Call 3 prospects in a new area",
+    "Ask the biggest customer for a referral"
+   ],
+   "actions_more": [
+    "Put the biggest customer on an agreement",
+    "Set a monthly new-customer goal",
+    "Check in with the top customer"
+   ],
+   "roadblocks": [
+    "time",
+    "wait",
+    "dontknow"
+   ],
+   "default_helper": "me"
+  },
+  "followup": {
+   "experiments": [
+    {
+     "try": "Call every quote within 2 days",
+     "watch": "How many more turn into jobs"
+    },
+    {
+     "try": "Send every quote within 24 hours",
+     "watch": "Win rate versus last week"
+    }
+   ],
+   "statement": "Leads go cold with slow or no follow-up",
+   "deeper": [
+    "roles",
+    "phones",
+    "bottleneck"
+   ],
+   "fixed": [
+    "Quotes out within 24 hours",
+    "Every quote gets a follow-up call",
+    "More quotes turn into jobs",
+    "One person owns follow-up"
+   ],
+   "actions_top3": [
+    "List every open quote from 30 days",
+    "Call the 5 newest open quotes",
+    "Set a 2-day follow-up rule"
+   ],
+   "actions_more": [
+    "Give follow-up to one person",
+    "Make a simple quote template",
+    "Track quotes won vs. lost"
+   ],
+   "roadblocks": [
+    "time",
+    "noone",
+    "forget"
+   ],
+   "default_helper": "number2"
+  },
+  "nodifference": {
+   "experiments": [
+    {
+     "try": "Show photos and reviews with every quote",
+     "watch": "Fewer jobs lost on price"
+    },
+    {
+     "try": "Explain what's included before the price",
+     "watch": "How the price talk changes"
+    }
+   ],
+   "statement": "Nothing shows why we're the better pick",
+   "deeper": [
+    "visibility",
+    "pricing",
+    "noreturn"
+   ],
+   "fixed": [
+    "Customers say why they picked us",
+    "Quotes show what's included, not just price",
+    "Reviews and photos back it up",
+    "Fewer jobs lost on price"
+   ],
+   "actions_top3": [
+    "Ask 3 customers why they chose us",
+    "Write 3 reasons we're different",
+    "Add photos and reviews to quotes"
+   ],
+   "actions_more": [
+    "Explain what's included before price",
+    "Offer a written guarantee",
+    "Call one lost quote and ask why"
+   ],
+   "roadblocks": [
+    "dontknow",
+    "customer",
+    "time"
+   ],
+   "default_helper": "me"
+  },
+  "phones": {
+   "experiments": [
+    {
+     "try": "Have one person own the phone",
+     "watch": "Missed calls this week versus last"
+    },
+    {
+     "try": "Return every missed call within an hour",
+     "watch": "Calls that turn into jobs"
+    }
+   ],
+   "statement": "Nobody owns answering the phone",
+   "deeper": [
+    "roles",
+    "bottleneck",
+    "hiring"
+   ],
+   "fixed": [
+    "Calls answered live during hours",
+    "Missed calls returned within an hour",
+    "After-hours calls go somewhere",
+    "Missed calls counted weekly"
+   ],
+   "actions_top3": [
+    "Check how many calls got missed",
+    "Pick one person to own the phone",
+    "Call back yesterday's missed calls"
+   ],
+   "actions_more": [
+    "Set up a text-back for missed calls",
+    "Write a 3-line phone script",
+    "Look into an answering service"
+   ],
+   "roadblocks": [
+    "noone",
+    "cost",
+    "old"
+   ],
+   "default_helper": "number2"
+  },
+  "noreturn": {
+   "experiments": [
+    {
+     "try": "Send a thanks text after every job",
+     "watch": "Replies, reviews, or referrals"
+    },
+    {
+     "try": "Call 5 past customers just to check in",
+     "watch": "Work that comes from it"
+    }
+   ],
+   "statement": "We go quiet once the job is done",
+   "deeper": [
+    "followup",
+    "roles",
+    "visibility"
+   ],
+   "fixed": [
+    "Every customer hears back after the job",
+    "Reviews asked for every time",
+    "Repeat customers growing",
+    "Referrals coming in steadily"
+   ],
+   "actions_top3": [
+    "Send a thanks text after every job",
+    "Ask for a review at pickup",
+    "Call 5 past customers to check in"
+   ],
+   "actions_more": [
+    "Keep a list of happy customers",
+    "Send a yearly reminder text",
+    "Give one person the follow-up job"
+   ],
+   "roadblocks": [
+    "forget",
+    "time",
+    "awkward"
+   ],
+   "default_helper": "number2"
+  },
+  "visibility": {
+   "experiments": [
+    {
+     "try": "Answer every review this week",
+     "watch": "Calls mentioning reviews"
+    },
+    {
+     "try": "Post one real job photo daily",
+     "watch": "Profile views and calls"
+    }
+   ],
+   "statement": "People can't find us or see proof",
+   "deeper": [
+    "nodifference",
+    "leadsource",
+    "roles"
+   ],
+   "fixed": [
+    "We show up in local search",
+    "Fresh reviews every month",
+    "Every review gets a reply",
+    "Real job photos online"
+   ],
+   "actions_top3": [
+    "Search our name like a customer would",
+    "Answer every review this week",
+    "Ask 3 happy customers for reviews"
+   ],
+   "actions_more": [
+    "Post 3 real job photos",
+    "Fix hours, phone, address online",
+    "Hand online upkeep to one person"
+   ],
+   "roadblocks": [
+    "dontknow",
+    "time",
+    "noone"
+   ],
+   "default_helper": "me"
+  },
+  "change": {
+   "experiments": [
+    {
+     "try": "Ask 5 customers what's different lately",
+     "watch": "The same answer twice"
+    },
+    {
+     "try": "Track daily sales for the week",
+     "watch": "When and where it dips"
+    }
+   ],
+   "statement": "Something changed and the business hasn't caught up",
+   "deeper": [
+    "drift",
+    "nonumbers",
+    "nodifference"
+   ],
+   "fixed": [
+    "I can name what changed",
+    "One change made to adjust",
+    "Numbers steady again",
+    "The team knows the new plan"
+   ],
+   "actions_top3": [
+    "Write down what changed this year",
+    "Look at sales: when did it shift?",
+    "Ask 3 customers what's different now"
+   ],
+   "actions_more": [
+    "Ask a peer owner what they're seeing",
+    "Pick one thing to adjust this month",
+    "Tell the team what's changing"
+   ],
+   "roadblocks": [
+    "dontknow",
+    "wait",
+    "pushback"
+   ],
+   "default_helper": "outside"
+  },
+  "hiring": {
+   "experiments": [
+    {
+     "try": "Keep one job ad running all week",
+     "watch": "How many solid names come in"
+    },
+    {
+     "try": "Ask the team for referrals",
+     "watch": "Who they'd vouch for"
+    }
+   ],
+   "statement": "Hiring happens in a hurry when someone leaves",
+   "deeper": [
+    "future",
+    "nocheckins",
+    "expectations"
+   ],
+   "fixed": [
+    "Names on a list before a seat opens",
+    "New hires get a real first week",
+    "Fewer people gone within 90 days",
+    "Clear description for every seat"
+   ],
+   "actions_top3": [
+    "Write what the next hire must do",
+    "Ask the team who they'd recommend",
+    "Make a simple first-week checklist"
+   ],
+   "actions_more": [
+    "Keep one job ad always running",
+    "Ask the last person who quit why",
+    "Set a 30-day check-in for new hires"
+   ],
+   "roadblocks": [
+    "time",
+    "cost",
+    "noone"
+   ],
+   "default_helper": "number2"
+  },
+  "nocheckins": {
+   "experiments": [
+    {
+     "try": "Hold a 10-minute huddle every morning",
+     "watch": "Problems raised before they blow up"
+    },
+    {
+     "try": "Ask each person one question this week",
+     "watch": "What comes up that was hidden"
+    }
+   ],
+   "statement": "Problems only come up once they blow up",
+   "deeper": [
+    "unspoken",
+    "bottleneck",
+    "firefighting"
+   ],
+   "fixed": [
+    "A short check-in with each person",
+    "Problems raised early, not late",
+    "Nobody quits without warning",
+    "Weekly huddle that actually happens"
+   ],
+   "actions_top3": [
+    "Hold a 10-minute Monday huddle",
+    "Ask each person one question this week",
+    "Ask 'what's getting in the way?'"
+   ],
+   "actions_more": [
+    "Block 15 minutes weekly per key person",
+    "Ask the newest person how it's going",
+    "Act on one thing I hear"
+   ],
+   "roadblocks": [
+    "time",
+    "awkward",
+    "fire"
+   ],
+   "default_helper": "me"
+  },
+  "future": {
+   "experiments": [
+    {
+     "try": "Ask the best person what they want next",
+     "watch": "How their week changes after"
+    },
+    {
+     "try": "Give one person a new responsibility",
+     "watch": "How they handle it"
+    }
+   ],
+   "statement": "Good people don't see a future here",
+   "deeper": [
+    "recognition",
+    "nowhy",
+    "pricing"
+   ],
+   "fixed": [
+    "Each key person has a next step",
+    "Raises tied to clear skills",
+    "Good people stay past 2 years",
+    "People ask for more responsibility"
+   ],
+   "actions_top3": [
+    "Ask the best person what they want next",
+    "Give one person a new responsibility",
+    "Check pay against the market"
+   ],
+   "actions_more": [
+    "Write a simple pay ladder",
+    "Plan training for one skill",
+    "Tell one person they matter here"
+   ],
+   "roadblocks": [
+    "cost",
+    "awkward",
+    "wait"
+   ],
+   "default_helper": "me"
+  },
+  "inhead": {
+   "experiments": [
+    {
+     "try": "Record a short phone video of each task done",
+     "watch": "Questions that stop coming to me"
+    },
+    {
+     "try": "Have someone use written steps once",
+     "watch": "Where the steps fall short"
+    }
+   ],
+   "statement": "How it's done lives only in my head",
+   "deeper": [
+    "bottleneck",
+    "trust",
+    "firefighting"
+   ],
+   "fixed": [
+    "Top 5 tasks written step by step",
+    "Someone else handles them right",
+    "Fewer questions coming to me",
+    "New people learn without me"
+   ],
+   "actions_top3": [
+    "Record a 2-minute phone video of one task",
+    "List the 5 questions asked most",
+    "Write steps for one repeat job"
+   ],
+   "actions_more": [
+    "Have someone follow the steps, fix gaps",
+    "Post the steps where the work happens",
+    "Write down one task a week"
+   ],
+   "roadblocks": [
+    "time",
+    "tired",
+    "dontknow"
+   ],
+   "default_helper": "number2"
+  },
+  "expectations": {
+   "experiments": [
+    {
+     "try": "Show a photo of 'good' before each job",
+     "watch": "Re-dos and arguments this week"
+    },
+    {
+     "try": "Use one 3-item checklist on every job",
+     "watch": "Whether quality evens out"
+    }
+   ],
+   "statement": "What 'good' looks like was never spelled out",
+   "deeper": [
+    "inhead",
+    "toleratelow",
+    "nowhy"
+   ],
+   "fixed": [
+    "Everyone can say what good looks like",
+    "Same standard from everyone",
+    "Checklist used on every job",
+    "Fewer arguments about how"
+   ],
+   "actions_top3": [
+    "Write 3 must-dos for one job",
+    "Show a photo of good vs. not",
+    "Ask the team what 'good' means to them"
+   ],
+   "actions_more": [
+    "Go over the standard in the huddle",
+    "Post the standard where work happens",
+    "Check one job against it this week"
+   ],
+   "roadblocks": [
+    "pushback",
+    "time",
+    "old"
+   ],
+   "default_helper": "team"
+  },
+  "toleratelow": {
+   "experiments": [
+    {
+     "try": "Hold everyone to the same standard",
+     "watch": "Who rises and who resists"
+    },
+    {
+     "try": "Have one honest, kind talk",
+     "watch": "What changes after it"
+    }
+   ],
+   "statement": "Weak work gets a pass, so good people carry it",
+   "deeper": [
+    "unspoken",
+    "expectations",
+    "hiring"
+   ],
+   "fixed": [
+    "Same standard for everyone",
+    "Hard talks happen within a week",
+    "Good people stop carrying others",
+    "Low performers improve or move on"
+   ],
+   "actions_top3": [
+    "Name the one standard being skipped",
+    "Have one honest, kind talk this week",
+    "Ask the good ones what's wearing them down"
+   ],
+   "actions_more": [
+    "Write what must change, by when",
+    "Set a 30-day improvement plan",
+    "Get advice on letting someone go right"
+   ],
+   "roadblocks": [
+    "awkward",
+    "noone",
+    "wait"
+   ],
+   "default_helper": "me"
+  },
+  "teach": {
+   "experiments": [
+    {
+     "try": "Show once, watch once, then let go",
+     "watch": "How close it comes to right"
+    },
+    {
+     "try": "Have them teach it back",
+     "watch": "What they really understood"
+    }
+   ],
+   "statement": "It never got taught in a way that sticks",
+   "deeper": [
+    "inhead",
+    "trust",
+    "firefighting"
+   ],
+   "fixed": [
+    "Someone else does it right twice",
+    "Teaching is show, do, check",
+    "Hand-offs don't come back to me",
+    "I check results, not every step"
+   ],
+   "actions_top3": [
+    "Pick one task to hand off",
+    "Show once, then watch them do it once",
+    "Write 3 steps on a card"
+   ],
+   "actions_more": [
+    "Check the first 3 times, then let go",
+    "Have them teach it back",
+    "Expect version one at 80%"
+   ],
+   "roadblocks": [
+    "letgo",
+    "time",
+    "tired"
+   ],
+   "default_helper": "number2"
+  },
+  "trust": {
+   "experiments": [
+    {
+     "try": "Hand off one low-risk task fully",
+     "watch": "Whether it actually gets done"
+    },
+    {
+     "try": "Check results only, not every step",
+     "watch": "Mistakes that really matter"
+    }
+   ],
+   "statement": "Getting burned once made me take it all back",
+   "deeper": [
+    "teach",
+    "bottleneck",
+    "hiring"
+   ],
+   "fixed": [
+    "One task fully handed off",
+    "Mistakes caught by a check, not by me",
+    "Trust built step by step",
+    "Sleeping without checking the phone"
+   ],
+   "actions_top3": [
+    "Hand off one low-risk task first",
+    "Agree what 'done right' means up front",
+    "Set one simple check point"
+   ],
+   "actions_more": [
+    "Give it 2 weeks before judging",
+    "Name who has earned more trust",
+    "Talk through what went wrong last time"
+   ],
+   "roadblocks": [
+    "letgo",
+    "old",
+    "awkward"
+   ],
+   "default_helper": "number2"
+  },
+  "decisionrules": {
+   "experiments": [
+    {
+     "try": "Let small calls go without me",
+     "watch": "How many go fine"
+    },
+    {
+     "try": "Answer every question with 'what's the call?'",
+     "watch": "How often their answer is right"
+    }
+   ],
+   "statement": "Nobody knows what they can decide alone",
+   "deeper": [
+    "bottleneck",
+    "trust",
+    "roles"
+   ],
+   "fixed": [
+    "Small calls theirs, big calls mine",
+    "Clear list of who decides what",
+    "Fewer calls and texts asking",
+    "A dollar limit people can approve"
+   ],
+   "actions_top3": [
+    "Sort decisions: small ones theirs, big ones mine",
+    "Set a dollar limit they can approve",
+    "Ask them for their answer first"
+   ],
+   "actions_more": [
+    "Share the list in the huddle",
+    "Back their call, even if I'd differ",
+    "Review decisions weekly, not live"
+   ],
+   "roadblocks": [
+    "letgo",
+    "pushback",
+    "old"
+   ],
+   "default_helper": "team"
+  },
+  "bottleneck": {
+   "experiments": [
+    {
+     "try": "Let my #2 handle all small calls",
+     "watch": "What breaks, and what doesn't"
+    },
+    {
+     "try": "Silence work alerts 2 hours a day",
+     "watch": "Whether anything truly urgent happens"
+    },
+    {
+     "try": "Tally every question that comes to me",
+     "watch": "How many someone else could answer"
+    }
+   ],
+   "statement": "Too much waits on me to decide",
+   "deeper": [
+    "trust",
+    "inhead",
+    "noboundary"
+   ],
+   "fixed": [
+    "Work moves when I'm not there",
+    "Others share the load, not just me",
+    "A full day off, and it runs fine",
+    "Someone else owns key calls"
+   ],
+   "actions_top3": [
+    "Tally questions that come to me tomorrow",
+    "Let small calls go to my #2",
+    "Name a go-to person for questions"
+   ],
+   "actions_more": [
+    "Pick one area to hand over fully",
+    "Take a half day off as a test",
+    "Silence work alerts for 2 hours daily"
+   ],
+   "roadblocks": [
+    "letgo",
+    "pride",
+    "noone"
+   ],
+   "default_helper": "me"
+  },
+  "recognition": {
+   "experiments": [
+    {
+     "try": "Thank one person for something specific daily",
+     "watch": "Effort and mood by Friday"
+    },
+    {
+     "try": "Call out one win in each huddle",
+     "watch": "Who steps up after"
+    }
+   ],
+   "statement": "Good work goes unnoticed",
+   "deeper": [
+    "future",
+    "nowhy",
+    "firefighting"
+   ],
+   "fixed": [
+    "Good work called out every week",
+    "Pay reflects who does more",
+    "Good people stay",
+    "Team calls out wins on their own"
+   ],
+   "actions_top3": [
+    "Thank one person for something specific",
+    "Call out a win in the huddle",
+    "Write a quick note to the best person"
+   ],
+   "actions_more": [
+    "Tie a small bonus to quality",
+    "Ask the team who deserves credit",
+    "Notice one good thing a day"
+   ],
+   "roadblocks": [
+    "forget",
+    "cost",
+    "awkward"
+   ],
+   "default_helper": "me"
+  },
+  "unspoken": {
+   "experiments": [
+    {
+     "try": "Have the one talk being put off",
+     "watch": "How the air feels after"
+    },
+    {
+     "try": "Ask in huddle what's not being said",
+     "watch": "What surfaces when asked"
+    }
+   ],
+   "statement": "Something's not being said out loud",
+   "deeper": [
+    "nocheckins",
+    "isolation",
+    "toleratelow"
+   ],
+   "fixed": [
+    "The hard talk has happened",
+    "Less tension in the shop",
+    "Problems come to me early",
+    "Less talk behind backs"
+   ],
+   "actions_top3": [
+    "Name the one talk I'm avoiding",
+    "Start with what I respect about them",
+    "Say the hard thing kindly, in private"
+   ],
+   "actions_more": [
+    "Talk it through with someone outside first",
+    "Ask in huddle what's not being said",
+    "Clear the air on what changed"
+   ],
+   "roadblocks": [
+    "awkward",
+    "wait",
+    "pride"
+   ],
+   "default_helper": "me"
+  },
+  "nowhy": {
+   "experiments": [
+    {
+     "try": "Post 2 numbers on a whiteboard daily",
+     "watch": "Whether the team starts watching"
+    },
+    {
+     "try": "Share why one rule exists",
+     "watch": "Fewer shortcuts on that rule"
+    }
+   ],
+   "statement": "The team doesn't know the why or the score",
+   "deeper": [
+    "recognition",
+    "expectations",
+    "drift"
+   ],
+   "fixed": [
+    "Team knows 2 or 3 weekly numbers",
+    "Scoreboard posted and updated",
+    "People suggest fixes on their own",
+    "Team can say why the work matters"
+   ],
+   "actions_top3": [
+    "Pick 2 numbers the team can move",
+    "Post them on a whiteboard weekly",
+    "Share why one rule exists"
+   ],
+   "actions_more": [
+    "Tell a customer story in the huddle",
+    "Celebrate when a number improves",
+    "Ask the team which number they'd pick"
+   ],
+   "roadblocks": [
+    "pushback",
+    "forget",
+    "numbers"
+   ],
+   "default_helper": "team"
+  },
+  "firefighting": {
+   "experiments": [
+    {
+     "try": "Spend 30 minutes daily on one repeat fire",
+     "watch": "Whether that fire comes back"
+    },
+    {
+     "try": "Write tomorrow's top 3 before leaving",
+     "watch": "Big things that get done"
+    }
+   ],
+   "statement": "Every day is firefighting, no time for real fixes",
+   "deeper": [
+    "noplanning",
+    "bottleneck",
+    "rework"
+   ],
+   "fixed": [
+    "Same fire doesn't happen twice",
+    "One hour a week on real fixes",
+    "Fewer surprises each day",
+    "Days start with a plan"
+   ],
+   "actions_top3": [
+    "List this week's fires",
+    "Pick the fire that repeats most",
+    "Spend 30 minutes on its real fix"
+   ],
+   "actions_more": [
+    "Hand one kind of fire to someone",
+    "Block one hour, no interruptions",
+    "Write tomorrow's top 3 before leaving"
+   ],
+   "roadblocks": [
+    "fire",
+    "time",
+    "tired"
+   ],
+   "default_helper": "number2"
+  },
+  "noboundary": {
+   "experiments": [
+    {
+     "try": "Phone off at a set hour nightly",
+     "watch": "Real emergencies (usually none)"
+    },
+    {
+     "try": "Take one evening fully off",
+     "watch": "How the next day goes"
+    }
+   ],
+   "statement": "Work has no off switch",
+   "deeper": [
+    "bottleneck",
+    "noreset",
+    "inhead"
+   ],
+   "fixed": [
+    "Phone off after a set hour",
+    "One day a week with no work",
+    "Only emergencies after hours",
+    "Sleeping through the night"
+   ],
+   "actions_top3": [
+    "Set a shut-off time for work texts",
+    "Tell the team what counts as urgent",
+    "Name a backup for after hours"
+   ],
+   "actions_more": [
+    "Silence work apps at night",
+    "Take one evening fully off this week",
+    "Change voicemail to set hours"
+   ],
+   "roadblocks": [
+    "restguilt",
+    "fire",
+    "pushback"
+   ],
+   "default_helper": "number2"
+  },
+  "roles": {
+   "experiments": [
+    {
+     "try": "Give one task a single clear owner",
+     "watch": "Whether it stops slipping"
+    },
+    {
+     "try": "List who owns what, post it",
+     "watch": "Fewer 'I thought they had it'"
+    }
+   ],
+   "statement": "Nobody's clear on who owns what",
+   "deeper": [
+    "bottleneck",
+    "decisionrules",
+    "hiring"
+   ],
+   "fixed": [
+    "Every key task has one owner",
+    "Owners listed on one page",
+    "Fewer things falling through cracks",
+    "Not the default for everything"
+   ],
+   "actions_top3": [
+    "List 10 key tasks and who owns each",
+    "Circle the tasks only I do",
+    "Give one of them a new owner"
+   ],
+   "actions_more": [
+    "Share the owner list in the huddle",
+    "Write what 'owning it' means",
+    "Review the list in 30 days"
+   ],
+   "roadblocks": [
+    "noone",
+    "letgo",
+    "pushback"
+   ],
+   "default_helper": "number2"
+  },
+  "noreset": {
+   "experiments": [
+    {
+     "try": "Take one full day off",
+     "watch": "Whether the business holds up"
+    },
+    {
+     "try": "Eat lunch away from work daily",
+     "watch": "Energy by the afternoon"
+    },
+    {
+     "try": "Go to bed 30 minutes earlier",
+     "watch": "Mood on the drive in"
+    }
+   ],
+   "statement": "No real break in far too long",
+   "deeper": [
+    "bottleneck",
+    "noboundary",
+    "isolation"
+   ],
+   "fixed": [
+    "One full day off each week",
+    "A real vacation on the calendar",
+    "Sleeping 7 hours most nights",
+    "Less dread on Monday mornings"
+   ],
+   "actions_top3": [
+    "Pick one day a week, fully off",
+    "Take a half day off this week",
+    "Pick who covers that day"
+   ],
+   "actions_more": [
+    "Eat lunch away from work daily",
+    "Go to bed 30 minutes earlier tonight",
+    "Book a long weekend within 60 days"
+   ],
+   "roadblocks": [
+    "restguilt",
+    "fire",
+    "noone"
+   ],
+   "default_helper": "family"
+  },
+  "noplanning": {
+   "experiments": [
+    {
+     "try": "Write the top 3 before the day starts",
+     "watch": "How many get done"
+    },
+    {
+     "try": "Plan Monday's week in 15 minutes",
+     "watch": "Time lost to scrambling"
+    }
+   ],
+   "statement": "Days start without a plan",
+   "deeper": [
+    "firefighting",
+    "drift",
+    "bottleneck"
+   ],
+   "fixed": [
+    "Top 3 written before the day starts",
+    "A weekly plan every Monday",
+    "Big things get done, not just urgent",
+    "Less time feeling behind"
+   ],
+   "actions_top3": [
+    "Write tomorrow's top 3 tonight",
+    "Take 15 minutes Monday to plan",
+    "Do the hardest thing first"
+   ],
+   "actions_more": [
+    "Plan the week with my #2",
+    "Keep one planning sheet, not sticky notes",
+    "Check the plan at lunch"
+   ],
+   "roadblocks": [
+    "forget",
+    "fire",
+    "old"
+   ],
+   "default_helper": "me"
+  },
+  "sayyes": {
+   "experiments": [
+    {
+     "try": "Say 'let me check and get back' first",
+     "watch": "How many yeses were wrong"
+    },
+    {
+     "try": "Add a buffer to every time quote",
+     "watch": "Promises kept on time"
+    }
+   ],
+   "statement": "Saying yes to more than fits",
+   "deeper": [
+    "pricing",
+    "noplanning",
+    "bottleneck"
+   ],
+   "fixed": [
+    "Every yes checked against time and cost",
+    "Promises kept on time",
+    "Some jobs turned down on purpose",
+    "Fewer late nights catching up"
+   ],
+   "actions_top3": [
+    "Count the hours before saying yes",
+    "Answer 'let me check and get back'",
+    "Count this week's open promises"
+   ],
+   "actions_more": [
+    "Add a buffer to every time quote",
+    "Write what a good-fit job looks like",
+    "Move one deadline honestly, now"
+   ],
+   "roadblocks": [
+    "customer",
+    "awkward",
+    "old"
+   ],
+   "default_helper": "me"
+  },
+  "isolation": {
+   "experiments": [
+    {
+     "try": "Call one owner I respect",
+     "watch": "Whether the load feels lighter"
+    },
+    {
+     "try": "Share one worry with someone close",
+     "watch": "How sleep goes that night"
+    }
+   ],
+   "statement": "Carrying it all alone",
+   "deeper": [
+    "unspoken",
+    "noreset",
+    "nonumbers"
+   ],
+   "fixed": [
+    "One person to talk to weekly",
+    "A peer group or mentor in place",
+    "Big decisions talked through first",
+    "Lighter going into the week"
+   ],
+   "actions_top3": [
+    "Call one owner I respect this week",
+    "Share one worry with my spouse",
+    "Tell my #2 one thing I'm carrying"
+   ],
+   "actions_more": [
+    "Look for a local owner peer group",
+    "Book a chat with a mentor",
+    "Grab coffee with an old friend"
+   ],
+   "roadblocks": [
+    "pride",
+    "time",
+    "dontknow"
+   ],
+   "default_helper": "outside"
+  },
+  "drift": {
+   "experiments": [
+    {
+     "try": "Write one goal and look daily",
+     "watch": "Whether days start to line up"
+    },
+    {
+     "try": "Do one thing I used to enjoy here",
+     "watch": "Energy that comes back"
+    }
+   ],
+   "statement": "Lost sight of what I'm aiming at",
+   "deeper": [
+    "wronghat",
+    "noreset",
+    "isolation"
+   ],
+   "fixed": [
+    "One goal written for this year",
+    "I can say why I do this",
+    "Weekly steps toward that goal",
+    "More good days than bad"
+   ],
+   "actions_top3": [
+    "Write why I started this business",
+    "Pick one goal for the next 12 months",
+    "Write what a good Tuesday looks like"
+   ],
+   "actions_more": [
+    "Take a half day away to think",
+    "Talk it through with someone I trust",
+    "Cut one thing that drains me"
+   ],
+   "roadblocks": [
+    "time",
+    "dontknow",
+    "wait"
+   ],
+   "default_helper": "outside"
+  },
+  "wronghat": {
+   "experiments": [
+    {
+     "try": "Hand off one draining task",
+     "watch": "Energy at day's end"
+    },
+    {
+     "try": "Protect 2 hours for my best work",
+     "watch": "What gets built in that time"
+    }
+   ],
+   "statement": "My days go to work that drains me",
+   "deeper": [
+    "roles",
+    "bottleneck",
+    "drift"
+   ],
+   "fixed": [
+    "Half my week on what I'm best at",
+    "Draining tasks handed off or cut",
+    "More energy at day's end",
+    "Doing the work I started for"
+   ],
+   "actions_top3": [
+    "List my week: drains vs. energizes",
+    "Hand off one draining task",
+    "Protect 2 hours for my best work"
+   ],
+   "actions_more": [
+    "Ask who'd enjoy what drains me",
+    "Cut one task entirely",
+    "Hire part-time help for one drain"
+   ],
+   "roadblocks": [
+    "letgo",
+    "noone",
+    "cost"
+   ],
+   "default_helper": "number2"
+  },
+  "general": {
+   "experiments": [
+    {
+     "try": "Note each time it happens",
+     "watch": "What happens right before"
+    },
+    {
+     "try": "Ask my #2 what they see",
+     "watch": "Whether it matches what I think"
+    }
+   ],
+   "statement": "Still figuring out the root, in my own words",
+   "deeper": [
+    "drift",
+    "roles",
+    "nonumbers"
+   ],
+   "fixed": [
+    "It happens less often",
+    "I can name what sets it off",
+    "Calmer days at work",
+    "One clear change made"
+   ],
+   "actions_top3": [
+    "Write down when it happens next",
+    "Ask my #2 what they see",
+    "Talk it over with an owner I trust"
+   ],
+   "actions_more": [
+    "Test one small change for 2 weeks",
+    "Notice what happens right before",
+    "Look at this again in a week"
+   ],
+   "roadblocks": [
+    "dontknow",
+    "time",
+    "wait"
+   ],
+   "default_helper": "outside"
+  },
+  "enough": {
+   "experiments": [
+    {
+     "try": "Check the bank balance once a week, not daily",
+     "watch": "Worry level by Friday"
+    },
+    {
+     "try": "Write my number down, then leave it alone",
+     "watch": "Whether the urge to chase more eases"
+    },
+    {
+     "try": "Take one full day off, phone off",
+     "watch": "What actually happened without me"
+    }
+   ],
+   "statement": "The money is there; 'enough' was never defined",
+   "deeper": [
+    "drift",
+    "noreset",
+    "isolation"
+   ],
+   "fixed": [
+    "My number is written down and known",
+    "A month ends and it feels like enough",
+    "Real time off, without the guilt",
+    "Less checking the bank balance"
+   ],
+   "actions_top3": [
+    "Write my monthly number: what I truly need",
+    "Write what 'enough' looks like this year",
+    "Take one full day off, phone off"
+   ],
+   "actions_more": [
+    "List what's already paid for and safe",
+    "Drop one comparison habit for a week",
+    "Talk money goals with my spouse or partner"
+   ],
+   "roadblocks": [
+    "restguilt",
+    "forget",
+    "time"
+   ],
+   "default_helper": "family"
+  },
+  "vendorspecs": {
+   "experiments": [
+    {
+     "try": "Send specs and dates in writing",
+     "watch": "Whether the next order arrives right and on time"
+    },
+    {
+     "try": "Confirm the next order by email",
+     "watch": "Whether it ships as written"
+    }
+   ],
+   "statement": "The supplier never got specs and dates in writing",
+   "deeper": [
+    "expectations",
+    "nocheckins",
+    "roles"
+   ],
+   "fixed": [
+    "Every order has specs and a date in writing",
+    "Orders arrive right the first time",
+    "Fewer calls chasing deliveries",
+    "Problems raised before the truck leaves"
+   ],
+   "actions_top3": [
+    "Send specs and dates in writing",
+    "Confirm the next order by email",
+    "Name one contact on each side"
+   ],
+   "actions_more": [
+    "Ask what slows their orders",
+    "Get a backup quote from another supplier",
+    "Set a 10-minute monthly account check"
+   ],
+   "roadblocks": [
+    "time",
+    "awkward",
+    "cost"
+   ],
+   "default_helper": "me"
+  },
+  "vendorlate": {
+   "experiments": [
+    {
+     "try": "Raise the next late order the same day",
+     "watch": "How fast it gets fixed"
+    },
+    {
+     "try": "Ask for a firm ship date in writing",
+     "watch": "Whether the date holds"
+    }
+   ],
+   "statement": "Late or wrong deliveries get absorbed, not raised",
+   "deeper": [
+    "unspoken",
+    "nocheckins",
+    "nonumbers"
+   ],
+   "fixed": [
+    "Late orders get raised the same day",
+    "Fewer jobs held up by parts",
+    "A backup supplier is lined up",
+    "The supplier knows what on time means"
+   ],
+   "actions_top3": [
+    "List the last 5 late or wrong orders",
+    "Raise one late order the same day",
+    "Ask for a firm ship date in writing"
+   ],
+   "actions_more": [
+    "Price one backup supplier",
+    "Track on-time orders this month",
+    "Put the delivery rule in the next order"
+   ],
+   "roadblocks": [
+    "awkward",
+    "time",
+    "cost"
+   ],
+   "default_helper": "me"
+  },
+  "custpromise": {
+   "experiments": [
+    {
+     "try": "Write what was promised, then confirm it",
+     "watch": "Whether the next job ends without a dispute"
+    },
+    {
+     "try": "Add a scope line to the next quote",
+     "watch": "Questions at the end of the job"
+    }
+   ],
+   "statement": "What was promised to the customer never got written down",
+   "deeper": [
+    "expectations",
+    "followup",
+    "nodifference"
+   ],
+   "fixed": [
+    "Every job has the promise in writing",
+    "Fewer disputes at the end of a job",
+    "Customers sign off before work starts",
+    "Changes get a written price first"
+   ],
+   "actions_top3": [
+    "Write what was promised in 3 lines",
+    "Send it to the customer to confirm",
+    "Add a scope line to every quote"
+   ],
+   "actions_more": [
+    "Price changes in writing before work",
+    "Do a walk-through at the finish",
+    "Ask what would make this right"
+   ],
+   "roadblocks": [
+    "awkward",
+    "customer",
+    "time"
+   ],
+   "default_helper": "me"
+  },
+  "custpay": {
+   "experiments": [
+    {
+     "try": "Put payment terms on every quote this week",
+     "watch": "How fast the next invoices get paid"
+    },
+    {
+     "try": "Send each invoice the day work ends",
+     "watch": "Days until payment"
+    }
+   ],
+   "statement": "Payment terms were never made clear up front",
+   "deeper": [
+    "collections",
+    "nonumbers",
+    "sayyes"
+   ],
+   "fixed": [
+    "Terms are on every quote",
+    "Invoices go out the day work ends",
+    "Fewer customers paying late",
+    "Deposits taken on big jobs"
+   ],
+   "actions_top3": [
+    "Put payment terms on every quote",
+    "Send the invoice the day work ends",
+    "Call about the oldest unpaid invoice"
+   ],
+   "actions_more": [
+    "Take a deposit on the next big job",
+    "Offer one easy way to pay",
+    "Set a reminder 7 days after invoicing"
+   ],
+   "roadblocks": [
+    "awkward",
+    "customer",
+    "forget"
+   ],
+   "default_helper": "bookkeeper"
+  },
+  "familylines": {
+   "experiments": [
+    {
+     "try": "Keep one evening free of shop talk",
+     "watch": "Whether home feels calmer"
+    },
+    {
+     "try": "Set one time a week for business talk",
+     "watch": "Fewer surprise work talks at home"
+    }
+   ],
+   "statement": "Work and family lines were never drawn",
+   "deeper": [
+    "noboundary",
+    "roles",
+    "unspoken"
+   ],
+   "fixed": [
+    "Work talk has a set time and place",
+    "Home time without shop talk",
+    "Roles at work are clear for family",
+    "Fewer fights about the business"
+   ],
+   "actions_top3": [
+    "Pick one shop-talk-free evening",
+    "Agree on one work role in writing",
+    "Set one time a week for business talk"
+   ],
+   "actions_more": [
+    "Ask what's been weighing on them",
+    "Keep work calls out of dinner",
+    "Plan one day off together"
+   ],
+   "roadblocks": [
+    "awkward",
+    "time",
+    "restguilt"
+   ],
+   "default_helper": "family"
+  },
+  "familyunsaid": {
+   "experiments": [
+    {
+     "try": "Have one calm 15-minute money talk",
+     "watch": "Whether the worry feels shared"
+    },
+    {
+     "try": "Share one honest number this week",
+     "watch": "How the next talk goes"
+    }
+   ],
+   "statement": "Worries about the business never get said out loud",
+   "deeper": [
+    "isolation",
+    "nonumbers",
+    "unspoken"
+   ],
+   "fixed": [
+    "Money worries talked through calmly",
+    "Both sides know the real numbers",
+    "Fewer surprises at home",
+    "A plan both people agree on"
+   ],
+   "actions_top3": [
+    "Share one honest number this week",
+    "Ask what worries them most",
+    "Pick a calm time to talk money"
+   ],
+   "actions_more": [
+    "Write one shared goal for the year",
+    "Talk about time off, not just money",
+    "Check in again in a week"
+   ],
+   "roadblocks": [
+    "awkward",
+    "time",
+    "pride"
+   ],
+   "default_helper": "family"
+  }
+ },
+ "roadblocks": {
+  "time": {
+   "label": "There's no time this week",
+   "ideas": [
+    "Put 20 minutes on the calendar first",
+    "Do the smallest piece first"
+   ],
+   "plan_line": "If {label_lower}, I'll {idea_lower}."
+  },
+  "forget": {
+   "label": "It slips once the day starts",
+   "ideas": [
+    "Set a phone alarm for it",
+    "Tape it where I'll see it"
+   ],
+   "plan_line": "If {label_lower}, I'll {idea_lower}."
+  },
+  "pushback": {
+   "label": "The team pushes back",
+   "ideas": [
+    "Share the why in two sentences",
+    "Try it for two weeks, then review"
+   ],
+   "plan_line": "If {label_lower}, I'll {idea_lower}."
+  },
+  "customer": {
+   "label": "Customers might complain",
+   "ideas": [
+    "Start with new customers first",
+    "Have one line ready to say"
+   ],
+   "plan_line": "If {label_lower}, I'll {idea_lower}."
+  },
+  "fire": {
+   "label": "A fire pulls me away",
+   "ideas": [
+    "Hand the fire to someone for an hour",
+    "Move it to next morning, not someday"
+   ],
+   "plan_line": "If {label_lower}, I'll {idea_lower}."
+  },
+  "letgo": {
+   "label": "Letting go feels hard",
+   "ideas": [
+    "Hand off one small piece first",
+    "Check the result once, not every step"
+   ],
+   "plan_line": "If {label_lower}, I'll {idea_lower}."
+  },
+  "cost": {
+   "label": "It costs money that's tight",
+   "ideas": [
+    "Start with the free version",
+    "Ask bookkeeper what it would free up"
+   ],
+   "plan_line": "If {label_lower}, I'll {idea_lower}."
+  },
+  "awkward": {
+   "label": "The talk feels awkward",
+   "ideas": [
+    "Be honest and kind, both at once",
+    "Ask a question instead of telling"
+   ],
+   "plan_line": "If {label_lower}, I'll {idea_lower}."
+  },
+  "old": {
+   "label": "Old habits slide back",
+   "ideas": [
+    "Pick one day a week to check",
+    "Ask one person to hold me to it"
+   ],
+   "plan_line": "If {label_lower}, I'll {idea_lower}."
+  },
+  "dontknow": {
+   "label": "I'm not sure where to start",
+   "ideas": [
+    "Do just the first 15 minutes",
+    "Ask someone who's done it"
+   ],
+   "plan_line": "If {label_lower}, I'll {idea_lower}."
+  },
+  "tired": {
+   "label": "I'm too tired by night",
+   "ideas": [
+    "Move it to first thing in the morning",
+    "Shrink it to 10 minutes"
+   ],
+   "plan_line": "If {label_lower}, I'll {idea_lower}."
+  },
+  "pride": {
+   "label": "Asking for help feels like weakness",
+   "ideas": [
+    "Ask one person one small question",
+    "Treat it like hiring an expert"
+   ],
+   "plan_line": "If {label_lower}, I'll {idea_lower}."
+  },
+  "numbers": {
+   "label": "The numbers are a mess",
+   "ideas": [
+    "Start with last month only",
+    "Hand the pile to the bookkeeper"
+   ],
+   "plan_line": "If {label_lower}, I'll {idea_lower}."
+  },
+  "noone": {
+   "label": "There's nobody to hand it to",
+   "ideas": [
+    "Pick the person closest to ready",
+    "Get part-time help for just this"
+   ],
+   "plan_line": "If {label_lower}, I'll {idea_lower}."
+  },
+  "restguilt": {
+   "label": "Resting feels like falling behind",
+   "ideas": [
+    "Treat rest as part of the work",
+    "Rest first, then plan the week"
+   ],
+   "plan_line": "If {label_lower}, I'll {idea_lower}."
+  },
+  "wait": {
+   "label": "I keep waiting for the right time",
+   "ideas": [
+    "Pick a date, not 'when it's slow'",
+    "Start with a 2-week trial"
+   ],
+   "plan_line": "If {label_lower}, I'll {idea_lower}."
+  }
+ },
+ "helpers": {
+  "me": "Just me",
+  "number2": "My #2 person",
+  "team": "The whole team",
+  "family": "My spouse or family",
+  "bookkeeper": "My bookkeeper",
+  "outside": "A mentor or peer"
+ },
+ "dates": [
+  "Tomorrow",
+  "Within 3 days",
+  "By Friday",
+  "Within 7 days",
+  "Pick a date"
+ ],
+ "checkin": [
+  "In 1 week",
+  "In 2 weeks",
+  "In 30 days",
+  "No thanks"
+ ],
+ "safety_line": {
+  "text": "If it's heavier than work, call or text 988, any time.",
+  "where": "last line of the plan, path 'wornout' only (approved by Joe Nov 3)"
+ },
+ "routing": {
+  "method": "keyword stems; s2-specific match=2 pts, path match=1; top path wins; tie -> show 2 closest buttons; none -> show 6 buttons 'Which is closest?'; matched s2 cards shown first; AI may re-rank later, keywords are fallback",
+  "rules": [
+   {
+    "path": "money",
+    "s2": null,
+    "keywords": [
+     "money",
+     "cash",
+     "broke",
+     "profit",
+     "margin",
+     "bank",
+     "bills",
+     "afford",
+     "debt",
+     "loan",
+     "payroll",
+     "expens"
+    ]
+   },
+   {
+    "path": "money",
+    "s2": 0,
+    "keywords": [
+     "busy but",
+     "busy",
+     "no money",
+     "no profit",
+     "busy and broke",
+     "where.*money"
+    ]
+   },
+   {
+    "path": "money",
+    "s2": 1,
+    "keywords": [
+     "pay late",
+     "pay me late",
+     "paying late",
+     "late pay",
+     "owe",
+     "owed",
+     "collect",
+     "invoice",
+     "receivable",
+     "unpaid",
+     "chasing pay"
+    ]
+   },
+   {
+    "path": "money",
+    "s2": 2,
+    "keywords": [
+     "bills",
+     "juggl",
+     "credit card",
+     "borrow",
+     "behind on",
+     "overdue bill",
+     "vendor"
+    ]
+   },
+   {
+    "path": "money",
+    "s2": 3,
+    "keywords": [
+     "pay myself",
+     "paycheck",
+     "salary",
+     "my pay",
+     "can't pay me",
+     "owner pay"
+    ]
+   },
+   {
+    "path": "customers",
+    "s2": null,
+    "keywords": [
+     "customer",
+     "client",
+     "lead",
+     "sales",
+     "work coming",
+     "no work",
+     "slow",
+     "calls",
+     "marketing",
+     "jobs",
+     "phone",
+     "ring"
+    ]
+   },
+   {
+    "path": "customers",
+    "s2": 0,
+    "keywords": [
+     "feast",
+     "famine",
+     "up and down",
+     "seasonal",
+     "slow season",
+     "dead week"
+    ]
+   },
+   {
+    "path": "customers",
+    "s2": 1,
+    "keywords": [
+     "quote",
+     "estimate",
+     "price shop",
+     "ghost",
+     "never hear back",
+     "don't book",
+     "doesn't close"
+    ]
+   },
+   {
+    "path": "customers",
+    "s2": 2,
+    "keywords": [
+     "voicemail",
+     "miss.*call",
+     "missed",
+     "phone ring",
+     "nobody answer"
+    ]
+   },
+   {
+    "path": "customers",
+    "s2": 3,
+    "keywords": [
+     "repeat",
+     "don't come back",
+     "come back",
+     "referral",
+     "return"
+    ]
+   },
+   {
+    "path": "customers",
+    "s2": 4,
+    "keywords": [
+     "dried up",
+     "dry",
+     "competition",
+     "competitor",
+     "online",
+     "google"
+    ]
+   },
+   {
+    "path": "people",
+    "s2": null,
+    "keywords": [
+     "staff",
+     "employee",
+     "team",
+     "tech",
+     "guys",
+     "crew",
+     "worker",
+     "people",
+     "hire",
+     "manager",
+     "foreman"
+    ]
+   },
+   {
+    "path": "people",
+    "s2": 0,
+    "keywords": [
+     "quit",
+     "quitting",
+     "leav",
+     "turnover",
+     "no.?show",
+     "walk off",
+     "walked out",
+     "ghosted me"
+    ]
+   },
+   {
+    "path": "people",
+    "s2": 1,
+    "keywords": [
+     "mistake",
+     "sloppy",
+     "don't follow",
+     "shortcut",
+     "not done right",
+     "wrong way",
+     "quality",
+     "comeback"
+    ]
+   },
+   {
+    "path": "people",
+    "s2": 2,
+    "keywords": [
+     "ask me",
+     "every decision",
+     "can't decide",
+     "need me",
+     "run everything by"
+    ]
+   },
+   {
+    "path": "people",
+    "s2": 3,
+    "keywords": [
+     "good ones",
+     "good ones leave",
+     "best guy",
+     "weak",
+     "lazy",
+     "bad apple",
+     "dead weight"
+    ]
+   },
+   {
+    "path": "people",
+    "s2": 4,
+    "keywords": [
+     "don't care",
+     "doesn't care",
+     "no one cares",
+     "nobody cares",
+     "attitude",
+     "effort",
+     "ownership"
+    ]
+   },
+   {
+    "path": "doing",
+    "s2": null,
+    "keywords": [
+     "myself",
+     "alone",
+     "everything",
+     "do it all",
+     "all on me",
+     "only me",
+     "no help"
+    ]
+   },
+   {
+    "path": "doing",
+    "s2": 0,
+    "keywords": [
+     "faster if i",
+     "just do it",
+     "easier to do",
+     "do it myself"
+    ]
+   },
+   {
+    "path": "doing",
+    "s2": 1,
+    "keywords": [
+     "texts",
+     "constantly",
+     "interrupt",
+     "phone all day",
+     "questions all day"
+    ]
+   },
+   {
+    "path": "doing",
+    "s2": 2,
+    "keywords": [
+     "paperwork",
+     "admin",
+     "emails",
+     "office",
+     "quickbooks",
+     "bookkeeping"
+    ]
+   },
+   {
+    "path": "doing",
+    "s2": 3,
+    "keywords": [
+     "day off",
+     "vacation",
+     "can't leave",
+     "falls apart",
+     "when i'm out",
+     "sick day"
+    ]
+   },
+   {
+    "path": "wornout",
+    "s2": null,
+    "keywords": [
+     "tired",
+     "exhaust",
+     "burn",
+     "burned out",
+     "worn",
+     "dread",
+     "stress",
+     "overwhelm",
+     "can't sleep",
+     "sleep",
+     "done with",
+     "sick of",
+     "hate",
+     "drained"
+    ]
+   },
+   {
+    "path": "wornout",
+    "s2": 1,
+    "keywords": [
+     "same thing every",
+     "fires",
+     "firefight",
+     "groundhog"
+    ]
+   },
+   {
+    "path": "wornout",
+    "s2": 2,
+    "keywords": [
+     "nights",
+     "weekends",
+     "hours",
+     "70 hours",
+     "60 hours",
+     "late night"
+    ]
+   },
+   {
+    "path": "wornout",
+    "s2": 3,
+    "keywords": [
+     "snap",
+     "yell",
+     "temper",
+     "short fuse",
+     "wife",
+     "husband",
+     "spouse",
+     "family",
+     "kids",
+     "marriage"
+    ]
+   },
+   {
+    "path": "off",
+    "s2": null,
+    "keywords": [
+     "off",
+     "weird",
+     "something wrong",
+     "not right",
+     "can't put my finger",
+     "gut",
+     "stuck",
+     "not fun",
+     "meh",
+     "lost"
+    ]
+   },
+   {
+    "path": "off",
+    "s2": 1,
+    "keywords": [
+     "tension",
+     "drama",
+     "gossip",
+     "fight",
+     "conflict",
+     "behind my back"
+    ]
+   },
+   {
+    "path": "off",
+    "s2": 2,
+    "keywords": [
+     "slipping",
+     "down this year",
+     "numbers down",
+     "declin"
+    ]
+   },
+   {
+    "path": "off",
+    "s2": 3,
+    "keywords": [
+     "not getting anywhere",
+     "spinning",
+     "treading water",
+     "hamster",
+     "stuck"
+    ]
+   }
+  ]
+ },
+ "vent": {
+  "button": "Let it rip",
+  "heading": "Let it rip",
+  "sub": "Say everything. Nothing here gets judged.",
+  "placeholder": "Type or talk. Any words. As long as it takes.",
+  "done": "Done",
+  "close": "Close",
+  "ack": "Got it. Thanks for getting that out.",
+  "ack_def": "That's a lot to carry. Got it.",
+  "saved": "What I let rip (saved on this device only)",
+  "delete": "Delete it",
+  "deleted": "Deleted",
+  "trade_words": {
+   "autobody": [
+    "body shop",
+    "collision",
+    "bodyshop",
+    "paint booth",
+    "frame",
+    "supplement",
+    "adjuster"
+   ],
+   "autorepair": [
+    "mechanic",
+    "repair shop",
+    "oil change",
+    "bay",
+    "diagnos"
+   ],
+   "restaurant": [
+    "restaurant",
+    "kitchen",
+    "servers",
+    "covers",
+    "the line",
+    "cooks",
+    "menu"
+   ],
+   "trades": [
+    "hvac",
+    "plumb",
+    "electric",
+    "service call",
+    "furnace"
+   ],
+   "contractor": [
+    "contractor",
+    "construction",
+    "subs",
+    "jobsite",
+    "bid",
+    "framing"
+   ],
+   "salon": [
+    "salon",
+    "spa",
+    "stylist",
+    "chair",
+    "clients book"
+   ],
+   "retail": [
+    "store",
+    "retail",
+    "inventory",
+    "register",
+    "shoppers"
+   ],
+   "landscaping": [
+    "landscap",
+    "mowing",
+    "lawn",
+    "yard"
+   ],
+   "cleaning": [
+    "cleaning",
+    "cleaners",
+    "janitorial",
+    "maid"
+   ],
+   "medical": [
+    "patients",
+    "dental",
+    "clinic",
+    "practice",
+    "front desk",
+    "hygienist"
+   ],
+   "pro": [
+    "clients",
+    "firm",
+    "billable",
+    "consulting",
+    "accounting"
+   ]
+  }
+ },
+ "share": {
+  "quiet": "Know an owner who's stuck?",
+  "plan_button": "Share this tool",
+  "heading": "Know an owner who's stuck?",
+  "sub": "Edit the note. Nothing sends unless I send it.",
+  "name_label": "Their first name (optional)",
+  "name_ph": "e.g. Pat",
+  "variants_label": "Who's it for?",
+  "link": "https://solve.joeperrone.biz",
+  "link_short": "solve.joeperrone.biz",
+  "btn_share": "Share\u2026",
+  "btn_text": "Text it",
+  "btn_email": "Email it",
+  "btn_copy": "Copy note",
+  "copied": "Copied",
+  "close": "Close",
+  "problem": {
+   "people": "people problems at work",
+   "money": "money stuff in the business",
+   "customers": "getting customers in the door",
+   "doing": "doing everything myself",
+   "wornout": "being worn out",
+   "off": "something feeling off at work",
+   "general": "a work problem"
+  },
+  "variants": [
+   {
+    "id": "friend",
+    "label": "A friend",
+    "subject": "This helped me",
+    "body": "Hey {name}, I was stuck on {problem} and this little tool got me to one clear move in a few minutes. No sign-up, nothing to buy. Passing it on because it helped me. Thought of you: {link}"
+   },
+   {
+    "id": "owner",
+    "label": "A fellow owner",
+    "subject": "A few minutes, one clear move",
+    "body": "Hey {name}, owner to owner: I was stuck on {problem}. This little tool got me to one clear move in a few minutes. No sign-up, nothing to buy. Passing it on because it helped me. Worth a look: {link}"
+   },
+   {
+    "id": "staff",
+    "label": "Someone who works for a friend",
+    "subject": "Might help your boss",
+    "body": "Hey {name}, this little tool helped me get unstuck in a few minutes. No sign-up, nothing to buy. Passing it on because it helped me. If your boss ever seems stuck, pass it along: {link}"
+   }
+  ],
+  "name_fallback": "there"
+ },
+ "sell": {
+  "endplan": "One move. A date. A who. That's how it starts.",
+  "ck_done": "It happened. One step closer to the business I said I'd build.",
+  "ck_missed": "Not yet. Same move, smaller, new date?",
+  "ck_smaller": "Yes, smaller, in 3 days",
+  "ck_smaller_done": "New date set. Same move, smaller.",
+  "vision_sub": "One fix at a time. Suggested lines are mine to change.",
+  "was": "Was:",
+  "heading_to": "Heading to:",
+  "locked": "This fix was free and it's mine. Keeping the record of every fix is what Solo is for.",
+  "invest": "The best tool in my business is me. This keeps my notes on how I fix things.",
+  "fixes": "{n} fixes on record. Look how far the first one was.",
+  "not_now": "Not now",
+  "cancel": "Cancel in one tap, any month. No questions.",
+  "share_add": "Passing it on because it helped me. Free, no sign-up."
+ },
+ "r2": {
+  "mic_notice": "Voice uses my browser's speech service (Google on Chrome). Typing stays on this phone.",
+  "mic_again": "Tap again to talk.",
+  "suggested": "Suggested",
+  "ret_q": "Did it happen?",
+  "ret_line": "Last move: {move}. Due {date}.",
+  "ret_yes": "Yes, done",
+  "ret_no": "Not yet",
+  "ret_later": "Later",
+  "person_q": "Is one person part of this?",
+  "person_none": "No one specific",
+  "cal": "Add to calendar: check back",
+  "cal_done": "Calendar file saved. Check back {date}.",
+  "cal_summary": "Check back: did my move happen?",
+  "fear": "6+ months of cash on hand. The fear isn't the numbers.",
+  "triage": "Under a month of cash. First move: cash triage.",
+  "triage_test": {
+   "try": "List every bill due in the next 30 days, then call the two biggest to set new dates",
+   "watch": "how many weeks of cash I really have"
+  },
+  "another": "Work on another problem"
+ },
+ "r3": {
+  "person_main": [
+   [
+    "employee",
+    "Employee"
+   ],
+   [
+    "partner",
+    "Partner"
+   ]
+  ],
+  "person_other": "Other\u2026",
+  "person_none": "No one",
+  "person_more_q": "Who, then?",
+  "call_title": "My call script",
+  "call_lines": [
+   "Ask for a new date: \"Can we move this payment to {date}?\"",
+   "Offer part now: \"I can pay part of it today, the rest by {date}.\"",
+   "Confirm in writing: \"Can you email me what we agreed?\""
+  ],
+  "call_words": "\\b(bills?|creditors?|vendors?|suppliers?|lenders?|invoices?|payments?|landlord)\\b",
+  "needs_other": "\\b(show|shown|let go|hand|hands|handoff|teach|train|delegate|let my|let them)\\b",
+  "solo_test": {
+   "try": "List 3 tasks only I do, pick one to hand off",
+   "watch": "which one someone else could start this week"
+  },
+  "show_q": "Who will I show?",
+  "runway_label": "Cash runway",
+  "runway": "Under 1 month means about {w} weeks of bills covered. Bills come first.",
+  "pq_skip": "Skip, I'll add detail later",
+  "ck_answered": "Answered: {did}.",
+  "ck_change": "Change answer",
+  "restore_link": "Paste my X Money receipt",
+  "restore_h": "Paste my X Money receipt",
+  "restore_sub": "No account. A receipt works on any phone it's pasted into. Keep it private.",
+  "restore_ph": "PSS1.\u2026",
+  "restore_btn": "Check receipt",
+  "restore_ok": "{t} plan active through {date}.",
+  "restore_bad": "That receipt didn't check out. Nothing changed.",
+  "restore_revoked": "That receipt was cancelled. Nothing changed.",
+  "restore_expired": "My {t} plan ended {date}. Back on Free.",
+  "restore_off": "Paid plans aren't live yet. Nothing to restore."
+ },
+ "r4": {
+  "worn_words": "\\b(tired|exhausted|burned out|burnt out|burnout|cant keep|can not keep|dreading|dread|worn out|cant sleep|running on empty|no energy|wiped out|fried)\\b",
+  "show_q": "Who will I show?",
+  "hand_q": "Who gets it?",
+  "hand_words": "\\b(hand|hands|hand over|handoff|give|delegate|pass)\\b",
+  "someone": "Someone I'll pick",
+  "add_more": "Add more (optional)",
+  "more": "More",
+  "pq_skip": "Skip for now",
+  "pq_next": "Next"
+ },
+ "r5": {
+  "outside": [
+   "vendor",
+   "customer",
+   "family"
+  ],
+  "type_roots": {
+   "vendor": [
+    "vendorspecs",
+    "vendorlate"
+   ],
+   "customer": [
+    "custpromise",
+    "custpay"
+   ],
+   "family": [
+    "familylines",
+    "familyunsaid"
+   ]
+  },
+  "staff_roots": [
+   "hiring",
+   "future",
+   "nocheckins",
+   "toleratelow",
+   "recognition",
+   "teach",
+   "trust",
+   "roles",
+   "inhead",
+   "expectations",
+   "nowhy",
+   "decisionrules",
+   "rework"
+  ],
+  "signs_q": "Which of these could be true?",
+  "signs": {
+   "vendor": [
+    "Late deliveries",
+    "Wrong parts or specs",
+    "Prices went up",
+    "Hard to reach",
+    "Not sure"
+   ],
+   "customer": [
+    "Unhappy with the work",
+    "Slow to pay",
+    "Wants more than was quoted",
+    "Hard to reach",
+    "Not sure"
+   ],
+   "family": [
+    "Works in the business",
+    "Worried about money",
+    "Wants more time together",
+    "Left out of decisions",
+    "Not sure"
+   ]
+  },
+  "signs_label": "Could be true",
+  "fact_prefix": "What I've noticed:",
+  "fact_prefix_family": "Where things stand:",
+  "sign_facts": {
+   "Works in the business": "we also work together in the business",
+   "Worried about money": "money is on both our minds",
+   "Wants more time together": "we both want more time together",
+   "Left out of decisions": "some decisions get made without talking first"
+  },
+  "with_q": "Who with?",
+  "fb": {
+   "q": "Did this help?",
+   "opts": [
+    "Yes",
+    "Somewhat",
+    "No"
+   ],
+   "miss_q": "What did it miss? (optional)",
+   "miss_ph": "No names, please. Just what was missing.",
+   "send": "Send to Joe (who built this)",
+   "notnow": "Not now",
+   "privacy": "Opens my email app. Joe Perrone (who built this) will see my email address. Nothing goes out unless I press send.",
+   "sent_thanks": "Thanks.",
+   "thanks": "Thanks. Noted on this phone only.",
+   "subject": "Fix tool feedback",
+   "intro": "Feedback from the fix tool. Names I entered here are hidden. No plan text.",
+   "l_rating": "Did it help:",
+   "l_where": "From:",
+   "l_root": "Root:",
+   "l_trade": "Trade:",
+   "l_miss": "What it missed:",
+   "none": "(none)",
+   "name_mask": "[name]"
+  },
+  "who": {
+   "vendor": "My supplier",
+   "customer": "My customer",
+   "family": "My spouse or family"
+  },
+  "types": {
+   "vendor": {
+    "label": "Supplier relationship (dates, specs, payment)",
+    "opener": "I want to get our orders running smoothly. Can we go over dates and specs?",
+    "own": "\"I haven't been clear about what we need and when. That's on me.\"",
+    "backup": "\"What usually holds our orders up?\"",
+    "dont": [
+     "\"Other suppliers can do this.\" (unless it's true and I'm ready to switch)",
+     "\"This is the last chance.\"",
+     "Anything said in front of my crew or customers."
+    ],
+    "defensive": "\"I'm not here to blame. I want our orders to land right, on time.\"",
+    "checkback": "\"Let's check in by email on {date} and see how the next order went.\"",
+    "agree": "\"For the next order, let's try this: {test}. We'll both watch for: {watch}.\"",
+    "steps": [
+     "Send specs and dates in writing",
+     "Confirm the next order by email",
+     "Name one contact on each side"
+    ],
+    "test": [
+     "Send specs and dates in writing",
+     "Whether the next order arrives right and on time"
+    ]
+   },
+   "customer": {
+    "label": "Customer relationship (what was promised)",
+    "opener": "I want to make sure this job ends the way it was promised.",
+    "own": "\"We weren't clear enough up front about what's included. That's on us.\"",
+    "backup": "\"What did you expect to see by now?\"",
+    "dont": [
+     "\"That's not what you asked for.\"",
+     "\"Everyone else is happy with it.\"",
+     "Anything about price before hearing them out."
+    ],
+    "defensive": "\"I hear you. Let's get it in writing so we both know what happens next.\"",
+    "checkback": "\"I'll follow up on {date} to make sure it's right.\"",
+    "agree": "\"Here's what I'll do: {test}. Then we both know what to expect.\"",
+    "steps": [
+     "Write what was promised in 3 lines",
+     "Send it to the customer to confirm",
+     "Do a walk-through at the finish"
+    ],
+    "test": [
+     "Write what was promised, then confirm it",
+     "Whether the job ends without a dispute"
+    ]
+   },
+   "family": {
+    "label": "Family (work and home overlap)",
+    "opener": "I've been carrying a lot from work. Can we talk about how it's landing at home?",
+    "own": "\"I've brought a lot of work home lately. I see that.\"",
+    "backup": "\"What would help most right now?\"",
+    "dont": [
+     "\"It's just business.\"",
+     "\"I'm doing this for the family.\" (as a way to end the talk)",
+     "Anything in front of the kids or the crew."
+    ],
+    "defensive": "\"I'm not trying to win this. I want us on the same page.\"",
+    "checkback": "\"Can we talk again on {date}, same time, just us?\"",
+    "agree": "\"Can we try one small thing this week and see how it feels?\"",
+    "steps": [
+     "Pick a calm time to talk",
+     "Ask what's been weighing on them",
+     "Agree on one small change at home"
+    ],
+    "test": [
+     "Have one calm 15-minute talk, away from work",
+     "Whether things feel less tense this week"
+    ]
+   }
+  },
+  "hand_words": "\\b(hand|hands|hand over|handoff|give|delegate|pass|handle|handles|take over|takes over|own|owns|let my|let them)\\b"
+ },
+ "flow2": {
+  "trade_short": {
+   "autobody": "Body shop",
+   "autorepair": "Repair shop",
+   "restaurant": "Restaurant",
+   "trades": "Trades business",
+   "contractor": "Contractor",
+   "salon": "Salon or spa",
+   "retail": "Store",
+   "landscaping": "Landscaping",
+   "cleaning": "Cleaning business",
+   "medical": "Practice",
+   "pro": "Firm",
+   "other": "Business"
+  },
+  "trade_chip": "{t}? Change",
+  "trade_none": "Set business type",
+  "own_link": "Not quite? Say it in my words.",
+  "own_ph": "e.g. started when my lead left",
+  "commit_when": "When?",
+  "plan_rb": "Something might get in the way? Plan for it",
+  "plan_detail": "Add detail for my team map",
+  "why": "Why this move",
+  "talk_more": "My conversation plan",
+  "with": "With",
+  "check": "Check back",
+  "pq_heading": "About this person",
+  "pq_today": "Today, which could be true?",
+  "cash_q": "Cash on hand covers about (optional)",
+  "cash": [
+   "Under 1 month",
+   "1-3 months",
+   "3-6 months",
+   "6+ months",
+   "Not sure"
+  ],
+  "cash_label": "Cash on hand"
+ },
+ "vision": {
+  "link": "Where I'm headed",
+  "heading": "Where I'm headed",
+  "sub": "Built from my own problems, flipped. Saved only on this phone.",
+  "groups": {
+   "people": "People",
+   "money": "Money",
+   "customers": "Customers",
+   "self": "Me"
+  },
+  "path_group": {
+   "people": "people",
+   "money": "money",
+   "customers": "customers",
+   "doing": "self",
+   "wornout": "self",
+   "off": "self"
+  },
+  "flip": {
+   "people": "My team owns results and follows through.",
+   "money": "I know my numbers and the money works for me.",
+   "customers": "The right customers keep coming, and they stay.",
+   "doing": "The work moves without everything going through me.",
+   "wornout": "I end the week with energy left.",
+   "off": "I know what's going on, and the work runs steady."
+  },
+  "draft_label": "Draft",
+  "edit": "Edit this line",
+  "empty": "Make a plan first. Each one adds a line here.",
+  "preview_note": "The full page is part of Solo and up. Not live yet.",
+  "from": "From:"
+ },
+ "pricing": {
+  "link": "Plans and pricing",
+  "heading": "Plans",
+  "sub": "All self-serve. Monthly only. The fix itself is always free.",
+  "per": "/mo",
+  "badge": "Best for most shops",
+  "soon": "Coming soon, monthly through X Money.",
+  "notify": "Show me here when it's live",
+  "notified": "Saved on this phone only. This page will show it when it's live.",
+  "notified_on": "Noted \u2713",
+  "live_now": "{t} is live now.",
+  "revoked": [],
+  "locked": "Part of a paid plan. Coming soon.",
+  "free_cta": "Keep using it free",
+  "tiers": [
+   {
+    "id": "ceo",
+    "name": "CEO",
+    "price": 299,
+    "hidden": true,
+    "items": [
+     "Unlimited people and locations",
+     "Manager seats",
+     "Company-wide pattern dashboard"
+    ]
+   },
+   {
+    "id": "owner",
+    "name": "Owner",
+    "price": 49,
+    "badge": true,
+    "items": [
+     "Up to 25 people",
+     "Full team map",
+     "Talk kits",
+     "Life patterns (coming)",
+     "Share with 1 partner (coming)"
+    ]
+   },
+   {
+    "id": "solo",
+    "name": "Solo",
+    "price": 19,
+    "items": [
+     "Unlimited problems",
+     "History",
+     "Reminders",
+     "To-do list",
+     "Self-profile",
+     "Up to 3 people"
+    ]
+   },
+   {
+    "id": "free",
+    "name": "Free",
+    "price": 0,
+    "items": [
+     "No sign-up",
+     "The full fix, start to plan",
+     "Everything works free until paid plans go live"
+    ]
+   }
+  ]
+ },
+ "privacy": {
+  "note": "Everything stays on this device. Nobody else sees what I write about my people.",
+  "delete": "Delete my data",
+  "confirm": "Delete every plan, person and note saved on this device? This can't be undone.",
+  "deleted": "All data on this device deleted",
+  "include_people": "Include what I wrote about the person",
+  "share_note": "Only this note gets shared. Plans, people and anything I let rip stay here.",
+  "sold_s1": "My notes never leave this phone. When paid plans go live, payment will go through X Money.",
+  "sold": "My notes never leave this phone. When paid plans go live, payment will go through X Money.",
+  "ai_label": "AI suggestions",
+  "ai_on": "AI on: typed words, minus names, emails and numbers, go to a free AI service to sort cards. Plans stay on this phone.",
+  "trade_set": "Business type: {t}",
+  "trade_change": "Change"
+ },
+ "adapt": {
+  "def_words": [
+   "they never",
+   "they always",
+   "not my fault",
+   "their fault",
+   "tried everything",
+   "ive tried",
+   "nobody",
+   "no one cares",
+   "always",
+   "never",
+   "useless",
+   "lazy",
+   "idiot",
+   "sick of",
+   "fed up",
+   "dont listen",
+   "wont listen",
+   "doesnt listen",
+   "no matter what i"
+  ],
+  "profanity": [
+   "fuck",
+   "shit",
+   "damn",
+   "hell",
+   "crap",
+   "bullshit",
+   "pissed",
+   "ass"
+  ],
+  "threshold": 2,
+  "ack": [
+   "That's a lot to carry. Let's just look at what happened.",
+   "Fair to be fed up. Facts first, then one small test.",
+   "Makes sense to be frustrated. Let's look at the last time."
+  ],
+  "theirside_q": "From their side, which of these could be true?",
+  "theirside_sub": "Pick any. Just possibilities.",
+  "theirside": [
+   [
+    "They weren't sure what 'done' meant",
+    "expectations"
+   ],
+   [
+    "They were stretched thin",
+    "firefighting"
+   ],
+   [
+    "They didn't feel heard",
+    "unspoken"
+   ],
+   [
+    "Nobody showed them how",
+    "teach"
+   ],
+   [
+    "They thought it was fine",
+    "nocheckins"
+   ],
+   [
+    "Not sure",
+    null
+   ]
+  ],
+  "test_heading": "One possibility. Worth a one-week test.",
+  "test_button": "Test it for a week",
+  "uncovered_label": "What I'm testing",
+  "styles": {
+   "headstrong": {
+    "words": [
+     "my way",
+     "i know",
+     "i built",
+     "i told them",
+     "i already",
+     "done this before"
+    ],
+    "intro": "My call. A one-week test will show what's true.",
+    "test_sub": "No debate. The week will tell."
+   },
+   "worn": {
+    "words": [
+     "tired",
+     "exhausted",
+     "burned",
+     "burnt",
+     "drained",
+     "cant sleep",
+     "no sleep",
+     "dreading"
+    ],
+    "intro": "Just one thing this week. That's enough.",
+    "test_sub": "Small enough to do tired.",
+    "actions_limit": 2
+   },
+   "pleaser": {
+    "words": [
+     "cant say no",
+     "say yes",
+     "keep everyone happy",
+     "let it slide",
+     "dont want to upset",
+     "hate conflict",
+     "feel bad"
+    ],
+    "intro": "One step for me this week, not for everyone else.",
+    "test_sub": "Kind and clear can go together."
+   },
+   "numbers": {
+    "words": [
+     "numbers",
+     "margin",
+     "profit",
+     "percent",
+     "kpi",
+     "cost",
+     "revenue",
+     "cash flow"
+    ],
+    "intro": "Measure it for a week. Let the numbers decide.",
+    "test_sub": "Count it before and after."
+   },
+   "newowner": {
+    "words": [
+     "new owner",
+     "just bought",
+     "first year",
+     "just started",
+     "took over",
+     "new to this"
+    ],
+    "intro": "Still learning the ropes. One step at a time.",
+    "test_sub": "Every owner learns this way."
+   },
+   "veteran": {
+    "words": [
+     "years",
+     "decades",
+     "been doing this",
+     "always done",
+     "old school",
+     "since the 90s",
+     "since the 80s"
+    ],
+    "intro": "Years of know-how. One small change to test.",
+    "test_sub": "Experience plus one fresh data point."
+   }
+  }
+ },
+ "trade": {
+  "heading": "What kind of business is it?",
+  "sub": "So the words fit. The questions cover people, hand-offs and numbers.",
+  "options": [
+   [
+    "autobody",
+    "Auto body or collision",
+    "shop"
+   ],
+   [
+    "autorepair",
+    "Auto repair",
+    "shop"
+   ],
+   [
+    "restaurant",
+    "Restaurant or food",
+    "quick"
+   ],
+   [
+    "trades",
+    "HVAC, plumbing or electrical",
+    "shop"
+   ],
+   [
+    "contractor",
+    "Contractor or construction",
+    "shop"
+   ],
+   [
+    "salon",
+    "Salon or spa",
+    "polished"
+   ],
+   [
+    "retail",
+    "Retail store",
+    "quick"
+   ],
+   [
+    "landscaping",
+    "Landscaping",
+    "shop"
+   ],
+   [
+    "cleaning",
+    "Cleaning",
+    "shop"
+   ],
+   [
+    "medical",
+    "Medical or dental office",
+    "polished"
+   ],
+   [
+    "pro",
+    "Professional services",
+    "polished"
+   ],
+   [
+    "other",
+    "Something else",
+    "generic"
+   ]
+  ],
+  "biz": {
+   "autobody": "body shops",
+   "autorepair": "repair shops",
+   "restaurant": "restaurants",
+   "trades": "service companies",
+   "contractor": "contracting companies",
+   "salon": "salons and spas",
+   "retail": "stores",
+   "landscaping": "landscaping companies",
+   "cleaning": "cleaning companies",
+   "medical": "practices",
+   "pro": "firms",
+   "other": "businesses"
+  },
+  "normal": "This comes up a lot in owner-run {biz}.",
+  "echo": "In my words:",
+  "vocab": {
+   "autobody": {
+    "jobs": "ROs",
+    "quote": "estimate",
+    "quotes": "estimates",
+    "re-do": "comeback",
+    "re-dos": "comebacks",
+    "crew": "techs"
+   },
+   "autorepair": {
+    "jobs": "ROs",
+    "quote": "estimate",
+    "quotes": "estimates",
+    "re-do": "comeback",
+    "re-dos": "comebacks",
+    "crew": "techs"
+   },
+   "restaurant": {
+    "jobs": "orders",
+    "customer": "guest",
+    "customers": "guests",
+    "quote": "price",
+    "quotes": "prices",
+    "re-do": "remake",
+    "re-dos": "remakes",
+    "tech": "cook",
+    "techs": "staff",
+    "crew": "staff",
+    "shop": "restaurant",
+    "foreman": "manager"
+   },
+   "trades": {
+    "re-do": "callback",
+    "re-dos": "callbacks",
+    "techs": "techs",
+    "shop": "company"
+   },
+   "contractor": {
+    "job": "project",
+    "jobs": "projects",
+    "quote": "bid",
+    "quotes": "bids",
+    "re-do": "punch-list fix",
+    "re-dos": "punch-list fixes",
+    "tech": "crew member",
+    "techs": "crew",
+    "shop": "company"
+   },
+   "salon": {
+    "jobs": "appointments",
+    "customer": "client",
+    "customers": "clients",
+    "quote": "price",
+    "quotes": "prices",
+    "tech": "stylist",
+    "techs": "stylists",
+    "crew": "team",
+    "shop": "salon"
+   },
+   "retail": {
+    "jobs": "sales",
+    "quote": "price",
+    "quotes": "prices",
+    "tech": "associate",
+    "techs": "staff",
+    "crew": "staff",
+    "shop": "store"
+   },
+   "landscaping": {
+    "quote": "estimate",
+    "quotes": "estimates",
+    "re-do": "callback",
+    "re-dos": "callbacks",
+    "tech": "crew member",
+    "techs": "crew",
+    "shop": "company"
+   },
+   "cleaning": {
+    "re-do": "re-clean",
+    "re-dos": "re-cleans",
+    "tech": "cleaner",
+    "techs": "cleaners",
+    "shop": "company"
+   },
+   "medical": {
+    "jobs": "appointments",
+    "customer": "patient",
+    "customers": "patients",
+    "quote": "estimate",
+    "quotes": "estimates",
+    "tech": "staff member",
+    "techs": "staff",
+    "crew": "staff",
+    "shop": "office"
+   },
+   "pro": {
+    "job": "project",
+    "jobs": "projects",
+    "customer": "client",
+    "customers": "clients",
+    "quote": "proposal",
+    "quotes": "proposals",
+    "tech": "team member",
+    "techs": "team",
+    "crew": "team",
+    "shop": "firm"
+   },
+   "other": {
+    "tech": "team member",
+    "techs": "team",
+    "crew": "team",
+    "shop": "business"
+   }
+  }
+ },
+ "tone": {
+  "shop": {
+   "talk_note": "Keep it short and straight. Facts, then the ask.",
+   "swap": {
+    "Could this be at the root?": "Is this the real problem?",
+    "Want to try one of these for a week and see what happens?": "Try one for a week. See what happens.",
+    "No arguing with results. Just a small test.": "Small test. The results will tell.",
+    "Just this week. One step at a time.": "This week. One thing at a time.",
+    "Which first moves could work?": "What's the first move?",
+    "\"I don't think I ever made this clear. That's on me.\"": "\"I never made this clear. That's on me.\"",
+    "\"A lot changed since day one, and I didn't adjust with it.\"": "\"A lot changed since day one. I didn't adjust. That's on me.\""
+   }
+  },
+  "polished": {
+   "talk_note": "Private and warm. Thank them first, then the facts.",
+   "swap": {
+    "Could this be at the root?": "Could this be what's underneath it?",
+    "Want to try one of these for a week and see what happens?": "Would one of these be worth trying for a week?",
+    "No arguing with results. Just a small test.": "A small, low-risk test. Let the results guide the next step.",
+    "Just this week. One step at a time.": "Just this week. One thoughtful step at a time.",
+    "Which first moves could work?": "Which first steps feel right?",
+    "\"I don't think I ever made this clear. That's on me.\"": "\"I never made this as clear as I meant to. I own that.\"",
+    "\"A lot changed since day one, and I didn't adjust with it.\"": "\"So much changed since day one, and I haven't adjusted. I own that.\""
+   }
+  },
+  "quick": {
+   "talk_note": "Two minutes before the rush, not during it.",
+   "swap": {
+    "Could this be at the root?": "Root cause?",
+    "Want to try one of these for a week and see what happens?": "One-week test. Pick one.",
+    "No arguing with results. Just a small test.": "Small test. Real results.",
+    "Just this week. One step at a time.": "This week. One step.",
+    "Which first moves could work?": "First moves?",
+    "\"I don't think I ever made this clear. That's on me.\"": "\"I never made this clear. My miss.\"",
+    "\"A lot changed since day one, and I didn't adjust with it.\"": "\"A lot changed. I didn't adjust. My miss.\""
+   }
+  },
+  "generic": {
+   "talk_note": "Private, calm, and short.",
+   "swap": {}
+  }
+ },
+ "mine": {
+  "button": "Mine's more like\u2026",
+  "placeholder": "Tap the mic or type a few words",
+  "go": "Use this",
+  "label": "In my own words, along the way"
+ },
+ "pname": {
+  "q": "Their first name (optional)",
+  "placeholder": "e.g. Sam",
+  "pron_q": "Pronouns (optional)",
+  "pron": [
+   "they",
+   "she",
+   "he"
+  ]
+ },
+ "commits": {
+  "heading": "My commitments",
+  "sub": "Everything I said I'd do, and when. Saved on this device only.",
+  "link": "My commitments",
+  "open": "Still open",
+  "done": "Done",
+  "empty": "Nothing yet. Each plan adds its steps here.",
+  "kinds": {
+   "first": "First move",
+   "test": "One-week test",
+   "check": "Check back",
+   "talk": "Conversation",
+   "listen": "Listening talk"
+  },
+  "check_text": "Look at how it went: {title}",
+  "talk_text": "Have the talk with {who}",
+  "listen_text": "15-minute listening talk with {who}",
+  "due": "By {date}",
+  "overdue": "The date passed. Still worth doing? Pick a new date or let it go.",
+  "redate": "New date: in 3 days",
+  "letgo": "Let it go",
+  "undo": "Undo",
+  "ics": "Add to calendar",
+  "mark": "Mark done",
+  "let_go_label": "Let go"
+ },
+ "self": {
+  "heading": "How I work, so far",
+  "sub": "A mirror built from my answers and what I've followed through on. Just patterns.",
+  "link": "How I work",
+  "early": "Too early for patterns. A few more plans will show them.",
+  "basis": "Based on {p} plans and {c} commitments.",
+  "patterns_label": "Patterns across my problems",
+  "follow_label": "Follow-through",
+  "note": "Patterns aren't verdicts. They point to where a small change pays off.",
+  "learn_label": "What this tool has learned, on this device",
+  "repeat_root": "Keeps coming up: {root} ({n} plans)",
+  "finish_most": "What I finish most: {kind}.",
+  "finish_least": "What tends to slide: {kind}.",
+  "test_kept": "One-week tests kept: {k} of {n}.",
+  "adapts": "The tool now leads with what I finish and skips repeats.",
+  "rules": [
+   {
+    "id": "onthefly",
+    "text": "I tend to give instructions on the fly.",
+    "ev": [
+     "A quick word on the way out",
+     "Same as always, nothing new said",
+     "'Just call if stuck'",
+     "Steps were shown once"
+    ]
+   },
+   {
+    "id": "unspoken",
+    "text": "What 'done' looks like often goes unsaid at the start.",
+    "ev": [
+     "Nothing specific was agreed",
+     "A deadline, nothing on quality",
+     "Nothing, it was assumed",
+     "Something was left unsaid"
+    ]
+   },
+   {
+    "id": "late",
+    "text": "I tend to find out about problems late.",
+    "ev": [
+     "When the customer complained",
+     "At the end, on inspection",
+     "Weeks later, by chance",
+     "Never found out",
+     "Payday, at the last minute"
+    ]
+   },
+   {
+    "id": "throughme",
+    "text": "A lot runs through me.",
+    "ev": [
+     "It came back to the top to decide",
+     "Waited on one person to call back",
+     "Work only one person can do",
+     "Nobody else knows how",
+     "Someone asked a question"
+    ],
+    "roots": [
+     "bottleneck",
+     "inhead",
+     "trust",
+     "decisionrules"
+    ]
+   },
+   {
+    "id": "numbers",
+    "text": "I see the numbers later than I'd like.",
+    "ev": [
+     "When the bank balance dropped",
+     "When the bookkeeper called",
+     "Nobody talked about the numbers",
+     "Looking at the numbers"
+    ],
+    "roots": [
+     "nonumbers",
+     "overhead"
+    ]
+   },
+   {
+    "id": "rest",
+    "text": "Rest gets pushed to last.",
+    "ev": [
+     "After everyone left",
+     "Weekends",
+     "Late, after everyone left",
+     "It didn't, still on my mind",
+     "Running hard, no break",
+     "Already tired before it began"
+    ],
+    "roots": [
+     "noreset",
+     "noboundary"
+    ]
+   },
+   {
+    "id": "grab",
+    "text": "I grab work back when it's faster.",
+    "ev": [
+     "Faster to just grab it",
+     "It was handed off, then taken back"
+    ],
+    "roots": [
+     "trust"
+    ]
+   },
+   {
+    "id": "enough",
+    "text": "'Enough' is hard for me to pin down.",
+    "roots": [
+     "enough",
+     "payself"
+    ]
+   }
+  ],
+  "kept": "I follow through on {kind}.",
+  "mixed": "{kind}: some kept, some slipped.",
+  "slips": "{kind} tend to slip. Smaller and sooner might help.",
+  "kind_plural": {
+   "first": "first moves",
+   "test": "one-week tests",
+   "check": "check-backs",
+   "talk": "conversations",
+   "listen": "listening talks"
+  }
+ },
+ "moneycheck": {
+  "heading": "Do I actually know my numbers?",
+  "sub": "Cash, what the business is worth, what I truly need monthly.",
+  "options": [
+   "Yes, I know them cold",
+   "Roughly",
+   "Not really",
+   "Not sure"
+  ],
+  "strong": "Yes, I know them cold",
+  "follow_q": "Which of these could be true?",
+  "follow_sub": "Pick any.",
+  "follow": [
+   "The numbers are fine, but it never feels like enough",
+   "I compare with people further ahead",
+   "I worry it could all vanish fast",
+   "I keep raising the bar on myself",
+   "Not sure"
+  ],
+  "root": "enough"
+ },
+ "life": {
+  "q": "Which of these could be true?",
+  "sub": "Is this showing up at home or with friends too?",
+  "options": [
+   "Yes, at home",
+   "Yes, with friends",
+   "Not really",
+   "Not sure"
+  ],
+  "label": "Outside work, too",
+  "patterns": {
+   "money": "Comparing and keeping up makes any amount feel short, everywhere.",
+   "enough": "Comparing and keeping up makes any amount feel short, everywhere.",
+   "customers": "Waiting for things to come to me can show up at home too.",
+   "people": "When expectations go unsaid, frustration builds, at work and at home.",
+   "doing": "Carrying it all alone at work often means carrying it all at home.",
+   "wornout": "Running on empty doesn't stay at work. Rest has to be planned.",
+   "off": "No clear picture of where I'm headed drains drive, at work and at home.",
+   "vision": "No clear picture ahead means no drive, for them and for me."
+  },
+  "step": "One small thing at home this week: name what's already enough."
+ },
+ "cont": {
+  "check": "Check back on this one",
+  "another": "Work on another problem",
+  "saved": "My saved plans",
+  "team": "Team map",
+  "saved_note": "Saved on this device only.",
+  "saved_empty": "No saved plans yet.",
+  "ck_heading": "Did it happen?",
+  "ck_opts": [
+   "Yes, done",
+   "Partly",
+   "Not yet",
+   "Something got in the way"
+  ],
+  "notice_q": "What did I notice?",
+  "notice_opts": [
+   "It helped",
+   "No change yet",
+   "Made it harder",
+   "Not sure"
+  ],
+  "next_q": "What's next?",
+  "next_opts": [
+   "Keep it one more week",
+   "Try the next test",
+   "Work on another problem"
+  ],
+  "kept": "Kept for one more week.",
+  "full": "See the full plan",
+  "history": "Check-ins so far"
+ },
+ "team": {
+  "heading": "My team map",
+  "sub": "Built from the people in my plans. Saved on this device only.",
+  "fit_heading": "Where do they fit?",
+  "role_q": "Their role",
+  "roles": [
+   "Lead or supervisor",
+   "Tech",
+   "Office or front desk",
+   "Sales or estimates",
+   "Bookkeeper",
+   "Other"
+  ],
+  "reports_q": "Who do they report to?",
+  "reports": [
+   "Me",
+   "The lead",
+   "My partner",
+   "Not clear"
+  ],
+  "friction_q": "Any friction with others here? Pick any.",
+  "friction_none": "No one",
+  "me": "Me (owner)",
+  "empty": "No people saved yet. Plans with a person add them here.",
+  "cols": [
+   "Who",
+   "Role",
+   "Reports to",
+   "Day one",
+   "Today",
+   "Looks like"
+  ],
+  "flags_label": "What stands out",
+  "flag_carry": "{who} may be carrying too much.",
+  "flag_allme": "Everyone reports to me. Everything runs through one person.",
+  "flag_notclear": "No clear boss for {n} on the map.",
+  "flag_handoff": "Hand-off trouble in {n} plans. Look at how work moves.",
+  "flag_friction": "{who} shows up in {n} friction lines.",
+  "flag_mecarry": "I'm the one carrying everything, in {n} plans.",
+  "flag_ok": "Nothing stands out yet.",
+  "friction_label": "Friction lines",
+  "handoff_roots": [
+   "teach",
+   "expectations",
+   "inhead",
+   "roles",
+   "decisionrules",
+   "collections",
+   "followup",
+   "phones",
+   "rework"
+  ],
+  "carry_roots": [
+   "bottleneck",
+   "isolation",
+   "noboundary",
+   "noreset",
+   "inhead",
+   "trust",
+   "firefighting"
+  ]
+ }
+}
